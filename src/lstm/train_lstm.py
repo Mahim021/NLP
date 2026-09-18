@@ -1,28 +1,17 @@
-"""Train Model B: LSTM with pretrained word embeddings.
-
-Pipeline:
-    text -> tokenizer -> token IDs -> pretrained embedding
-    -> BiLSTM -> dense -> Yes/No
-
-The vocabulary is built from the training split only.
-The pretrained embedding is used to initialize the embedding layer.
-
-Validation is used for early stopping and checkpoint selection.
-The test set is evaluated only after training is complete.
-"""
+"""Train Model B: LSTM with pretrained Word2Vec embeddings."""
 
 import argparse
 import json
-import sys
 import time
 from pathlib import Path
+import sys
 
 import numpy as np
 import pandas as pd
 import torch
 import torch.nn as nn
-from torch.utils.data import DataLoader, TensorDataset
 from gensim.models import KeyedVectors
+from torch.utils.data import DataLoader, TensorDataset
 
 ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT))
@@ -37,6 +26,7 @@ from src.evaluation.metrics import (
 from src.lstm.model import LSTMClassifier
 from src.lstm.vocab import (
     PAD_ID,
+    UNK_ID,
     build_vocab,
     encode,
     save_vocab,
@@ -51,13 +41,13 @@ DEFAULTS = {
     "results_dir": str(ROOT / "results"),
     "models_dir": str(ROOT / "models"),
 
-    "max_len": 64,
-    "min_freq": 2,
-    "max_vocab": 20000,
-
     "embedding_path": str(ROOT / "embeddings" / "word2vec.bin"),
     "embedding_binary": True,
     "embedding_trainable": True,
+
+    "max_len": 64,
+    "min_freq": 2,
+    "max_vocab": 20000,
 
     "hidden_dim": 128,
     "num_layers": 1,
@@ -75,89 +65,54 @@ DEFAULTS = {
 }
 
 
-def load_word2vec(path, binary=True):
-    """Load pretrained Word2Vec vectors."""
+def make_embedding_matrix(
+    vocab: dict,
+    word_vectors: KeyedVectors,
+    seed: int,
+) -> tuple[torch.Tensor, float]:
 
-    path = Path(path)
-
-    if not path.exists():
-        raise FileNotFoundError(
-            f"Pretrained Word2Vec file not found: {path}\n"
-            "Place the embedding file at this path or update "
-            "'embedding_path' in configs/lstm.json."
-        )
-
-    print(f"Loading pretrained embeddings from: {path}")
-
-    vectors = KeyedVectors.load_word2vec_format(
-        str(path),
-        binary=binary,
-    )
-
-    print(
-        f"Embedding vocabulary: {len(vectors.key_to_index)}"
-    )
-    print(
-        f"Embedding dimension: {vectors.vector_size}"
-    )
-
-    return vectors
-
-
-def create_embedding_matrix(vocab, vectors, seed=42):
-    """
-    Create an embedding matrix matching our project vocabulary.
-
-    Pretrained vectors are used when a word exists in Word2Vec.
-    Random vectors are used only for words missing from the
-    pretrained vocabulary.
-    """
+    vector_size = word_vectors.vector_size
 
     rng = np.random.default_rng(seed)
-
-    embed_dim = vectors.vector_size
 
     matrix = rng.normal(
         loc=0.0,
         scale=0.05,
-        size=(len(vocab), embed_dim),
+        size=(len(vocab), vector_size),
     ).astype(np.float32)
 
-    # Padding should have a zero vector.
+    # Padding vector must be zero.
     matrix[PAD_ID] = 0.0
 
     found = 0
+    candidates = 0
 
-    for word, word_id in vocab.items():
-
-        if word_id == PAD_ID:
+    for word, idx in vocab.items():
+        if idx in (PAD_ID, UNK_ID):
             continue
 
-        if word in vectors.key_to_index:
-            matrix[word_id] = vectors[word]
+        candidates += 1
+
+        if word in word_vectors:
+            matrix[idx] = word_vectors[word]
             found += 1
 
-        elif word.lower() in vectors.key_to_index:
-            matrix[word_id] = vectors[word.lower()]
-            found += 1
+    coverage = found / candidates if candidates else 0.0
 
-    print(
-        f"Pretrained vectors found: "
-        f"{found}/{len(vocab) - 1}"
-    )
+    # Deterministic unknown-token initialization.
+    matrix[UNK_ID] = 0.0
 
-    return torch.tensor(matrix, dtype=torch.float32)
+    return torch.tensor(matrix), coverage
 
 
 def make_loader(
-    df,
-    vocab,
-    max_len,
-    batch_size,
-    shuffle,
+    df: pd.DataFrame,
+    vocab: dict,
+    max_len: int,
+    batch_size: int,
+    shuffle: bool,
     generator=None,
-):
-    """Convert a dataframe into a PyTorch DataLoader."""
+) -> DataLoader:
 
     x = torch.tensor(
         [
@@ -172,10 +127,8 @@ def make_loader(
         dtype=torch.long,
     )
 
-    dataset = TensorDataset(x, y)
-
     return DataLoader(
-        dataset,
+        TensorDataset(x, y),
         batch_size=batch_size,
         shuffle=shuffle,
         generator=generator,
@@ -183,19 +136,13 @@ def make_loader(
 
 
 @torch.no_grad()
-def evaluate(
-    model,
-    loader,
-    device,
-    criterion=None,
-):
-    """Evaluate the model."""
+def evaluate(model, loader, device, criterion=None):
 
     model.eval()
 
-    probabilities = []
-    predictions = []
-    true_labels = []
+    probs = []
+    preds = []
+    trues = []
     losses = []
 
     for xb, yb in loader:
@@ -210,44 +157,34 @@ def evaluate(
                 criterion(logits, yb).item() * len(yb)
             )
 
-        probs = torch.softmax(
-            logits,
-            dim=1,
-        )[:, 1]
+        probability = torch.softmax(logits, dim=1)[:, 1]
 
-        preds = (
-            probs >= 0.5
-        ).long()
-
-        probabilities.extend(
-            probs.cpu().tolist()
+        probs.extend(probability.cpu().tolist())
+        preds.extend(
+            (probability >= 0.5)
+            .long()
+            .cpu()
+            .tolist()
         )
-
-        predictions.extend(
-            preds.cpu().tolist()
-        )
-
-        true_labels.extend(
+        trues.extend(
             yb.cpu().tolist()
         )
 
-    if true_labels:
-        loss = float(
-            np.sum(losses) / len(true_labels)
-        )
-    else:
-        loss = None
+    loss = (
+        float(np.sum(losses) / len(trues))
+        if losses
+        else None
+    )
 
     return (
-        np.array(true_labels),
-        np.array(predictions),
-        np.array(probabilities),
+        np.array(trues),
+        np.array(preds),
+        np.array(probs),
         loss,
     )
 
 
-def resolve_device(choice):
-    """Select CPU or CUDA."""
+def resolve_device(choice: str) -> torch.device:
 
     if choice == "auto":
         return torch.device(
@@ -262,7 +199,7 @@ def resolve_device(choice):
 def main():
 
     parser = argparse.ArgumentParser(
-        description="Train Model B: LSTM."
+        description="Train MailSense LSTM."
     )
 
     parser.add_argument(
@@ -271,140 +208,150 @@ def main():
         default=ROOT / "configs" / "lstm.json",
     )
 
-    parser.add_argument(
-        "--splits-dir",
-        type=Path,
-    )
-
-    parser.add_argument(
-        "--results-dir",
-        type=Path,
-    )
-
-    parser.add_argument(
-        "--models-dir",
-        type=Path,
-    )
-
-    parser.add_argument(
-        "--embedding-path",
-        type=Path,
-    )
-
-    parser.add_argument(
-        "--epochs",
-        type=int,
-    )
-
-    parser.add_argument(
-        "--batch-size",
-        type=int,
-    )
-
-    parser.add_argument(
-        "--learning-rate",
-        type=float,
-    )
-
-    parser.add_argument(
-        "--max-len",
-        type=int,
-    )
-
-    parser.add_argument(
-        "--seed",
-        type=int,
-    )
-
-    parser.add_argument(
-        "--device",
-        type=str,
-    )
+    parser.add_argument("--splits-dir", type=Path)
+    parser.add_argument("--results-dir", type=Path)
+    parser.add_argument("--models-dir", type=Path)
+    parser.add_argument("--epochs", type=int)
+    parser.add_argument("--batch-size", type=int)
+    parser.add_argument("--learning-rate", type=float)
+    parser.add_argument("--max-len", type=int)
+    parser.add_argument("--seed", type=int)
+    parser.add_argument("--device", type=str)
 
     args = parser.parse_args()
 
     cfg = dict(DEFAULTS)
 
-    # Load configuration file.
     if args.config.exists():
-        with open(
-            args.config,
-            "r",
-            encoding="utf-8",
-        ) as file:
-            cfg.update(json.load(file))
+        cfg.update(
+            json.loads(
+                args.config.read_text(
+                    encoding="utf-8"
+                )
+            )
+        )
 
-    # Command-line overrides.
-    overrides = {
-        "splits_dir": args.splits_dir,
-        "results_dir": args.results_dir,
-        "models_dir": args.models_dir,
-        "embedding_path": args.embedding_path,
-        "epochs": args.epochs,
-        "batch_size": args.batch_size,
-        "learning_rate": args.learning_rate,
-        "max_len": args.max_len,
-        "seed": args.seed,
-        "device": args.device,
-    }
+    for key in (
+        "splits_dir",
+        "results_dir",
+        "models_dir",
+        "epochs",
+        "batch_size",
+        "learning_rate",
+        "max_len",
+        "seed",
+        "device",
+    ):
 
-    for key, value in overrides.items():
+        value = getattr(args, key, None)
 
         if value is not None:
+            cfg[key] = (
+                str(value)
+                if key.endswith("_dir")
+                else value
+            )
 
-            if key.endswith("_dir") or key == "embedding_path":
-                cfg[key] = str(value)
-            else:
-                cfg[key] = value
-
-    # Reproducibility.
     set_seed(cfg["seed"])
 
-    device = resolve_device(
-        cfg["device"]
-    )
+    device = resolve_device(cfg["device"])
 
     print(f"Device: {device}")
 
-    # Load common train/validation/test data.
+    # --------------------------------------------------
+    # Load common splits
+    # --------------------------------------------------
+
     train, val, test = load_splits(
         cfg["splits_dir"]
     )
 
-    print(
-        f"Train: {len(train)} | "
-        f"Validation: {len(val)} | "
-        f"Test: {len(test)}"
-    )
+    # --------------------------------------------------
+    # Build vocabulary from TRAIN only
+    # --------------------------------------------------
 
-    # Build vocabulary ONLY from training text.
     vocab = build_vocab(
         train["text"],
         min_freq=cfg["min_freq"],
         max_size=cfg["max_vocab"],
     )
 
-    print(f"Vocabulary size: {len(vocab)}")
-
-    # Load pretrained Word2Vec.
-    vectors = load_word2vec(
-        cfg["embedding_path"],
-        binary=cfg["embedding_binary"],
-    )
-
-    # Create embedding matrix aligned with our vocabulary.
-    embedding_matrix = create_embedding_matrix(
-        vocab,
-        vectors,
-        seed=cfg["seed"],
-    )
-
     cfg["vocab_size"] = len(vocab)
-    cfg["embed_dim"] = embedding_matrix.shape[1]
 
-    # Data loaders.
-    generator = torch.Generator().manual_seed(
-        cfg["seed"]
+    print(
+        f"train={len(train)} "
+        f"val={len(val)} "
+        f"test={len(test)} "
+        f"vocab={len(vocab)}"
+    )
+
+    # --------------------------------------------------
+    # Load pretrained Word2Vec
+    # --------------------------------------------------
+
+    embedding_path = Path(
+        cfg["embedding_path"]
+    )
+
+    if not embedding_path.exists():
+
+        raise FileNotFoundError(
+            f"Pretrained Word2Vec file not found: "
+            f"{embedding_path}"
+        )
+
+    print(
+        f"Loading pretrained embeddings: "
+        f"{embedding_path}"
+    )
+
+    word_vectors = (
+        KeyedVectors.load_word2vec_format(
+            embedding_path,
+            binary=cfg["embedding_binary"],
+        )
+    )
+
+    print(
+        f"Embedding vocabulary: "
+        f"{len(word_vectors)}"
+    )
+
+    print(
+        f"Embedding dimension: "
+        f"{word_vectors.vector_size}"
+    )
+
+    # --------------------------------------------------
+    # Create embedding matrix
+    # --------------------------------------------------
+
+    embedding_matrix, coverage = (
+        make_embedding_matrix(
+            vocab,
+            word_vectors,
+            cfg["seed"],
+        )
+    )
+
+    cfg["embedding_dim"] = (
+        word_vectors.vector_size
+    )
+
+    cfg["embedding_coverage"] = coverage
+
+    print(
+        f"Vocabulary coverage: "
+        f"{coverage:.2%}"
+    )
+
+    # --------------------------------------------------
+    # Data loaders
+    # --------------------------------------------------
+
+    generator = (
+        torch.Generator()
+        .manual_seed(cfg["seed"])
     )
 
     train_loader = make_loader(
@@ -432,7 +379,10 @@ def main():
         False,
     )
 
-    # Create LSTM model.
+    # --------------------------------------------------
+    # Model
+    # --------------------------------------------------
+
     model = LSTMClassifier(
         embedding_matrix=embedding_matrix,
         hidden_dim=cfg["hidden_dim"],
@@ -440,7 +390,9 @@ def main():
         bidirectional=cfg["bidirectional"],
         dropout=cfg["dropout"],
         pad_id=PAD_ID,
-        embedding_trainable=cfg["embedding_trainable"],
+        embedding_trainable=cfg[
+            "embedding_trainable"
+        ],
     ).to(device)
 
     cfg["n_parameters"] = int(
@@ -452,8 +404,12 @@ def main():
 
     print(
         f"Trainable parameters: "
-        f"{cfg['n_parameters']}"
+        f"{cfg['n_parameters']:,}"
     )
+
+    # --------------------------------------------------
+    # Optimizer
+    # --------------------------------------------------
 
     criterion = nn.CrossEntropyLoss()
 
@@ -463,7 +419,10 @@ def main():
         weight_decay=cfg["weight_decay"],
     )
 
-    # Model directory.
+    # --------------------------------------------------
+    # Output paths
+    # --------------------------------------------------
+
     model_dir = (
         Path(cfg["models_dir"])
         / cfg["model_name"]
@@ -476,13 +435,16 @@ def main():
 
     best_path = model_dir / "best.pt"
 
+    # --------------------------------------------------
+    # Training
+    # --------------------------------------------------
+
     history = []
 
     best_f1 = -1.0
     best_epoch = -1
     bad_epochs = 0
 
-    # Training loop.
     for epoch in range(
         1,
         cfg["epochs"] + 1,
@@ -490,7 +452,7 @@ def main():
 
         model.train()
 
-        start_time = time.time()
+        start = time.time()
 
         total_loss = 0.0
         seen = 0
@@ -524,10 +486,11 @@ def main():
 
             seen += len(yb)
 
-        train_loss = total_loss / seen
+        train_loss = (
+            total_loss / seen
+        )
 
-        # Validation.
-        yt, yp, ypr, val_loss = evaluate(
+        yt, yp, yprob, val_loss = evaluate(
             model,
             val_loader,
             device,
@@ -537,29 +500,35 @@ def main():
         metrics = compute_metrics(
             yt,
             yp,
-            ypr,
+            yprob,
         )
 
-        epoch_time = time.time() - start_time
+        elapsed = time.time() - start
 
-        history.append({
-            "epoch": epoch,
-            "train_loss": train_loss,
-            "val_loss": val_loss,
-            "val_accuracy": metrics["accuracy"],
-            "val_f1": metrics["f1"],
-            "seconds": round(epoch_time, 1),
-        })
+        history.append(
+            {
+                "epoch": epoch,
+                "train_loss": train_loss,
+                "val_loss": val_loss,
+                "val_accuracy": metrics[
+                    "accuracy"
+                ],
+                "val_f1": metrics["f1"],
+                "seconds": round(
+                    elapsed,
+                    1,
+                ),
+            }
+        )
 
         print(
-            f"Epoch {epoch:02d} | "
-            f"train_loss={train_loss:.4f} | "
-            f"val_loss={val_loss:.4f} | "
-            f"val_acc={metrics['accuracy']:.4f} | "
+            f"epoch {epoch:02d} "
+            f"train_loss={train_loss:.4f} "
+            f"val_loss={val_loss:.4f} "
+            f"val_acc={metrics['accuracy']:.4f} "
             f"val_f1={metrics['f1']:.4f}"
         )
 
-        # Save best checkpoint based on validation F1.
         if metrics["f1"] > best_f1:
 
             best_f1 = metrics["f1"]
@@ -568,7 +537,8 @@ def main():
 
             torch.save(
                 {
-                    "state_dict": model.state_dict(),
+                    "state_dict":
+                        model.state_dict(),
                     "config": cfg,
                     "epoch": epoch,
                     "val_f1": best_f1,
@@ -584,21 +554,29 @@ def main():
 
                 print(
                     f"Early stopping at epoch "
-                    f"{epoch}. Best epoch: {best_epoch}."
+                    f"{epoch}; best epoch "
+                    f"{best_epoch}."
                 )
 
                 break
 
-    # Save final state.
+    # --------------------------------------------------
+    # Save final checkpoint
+    # --------------------------------------------------
+
     torch.save(
         {
-            "state_dict": model.state_dict(),
+            "state_dict":
+                model.state_dict(),
             "config": cfg,
         },
         model_dir / "final.pt",
     )
 
-    # Load best validation checkpoint.
+    # --------------------------------------------------
+    # Load BEST checkpoint
+    # --------------------------------------------------
+
     checkpoint = torch.load(
         best_path,
         map_location=device,
@@ -611,77 +589,79 @@ def main():
     cfg["best_epoch"] = best_epoch
     cfg["best_val_f1"] = best_f1
 
-    # Save vocabulary and configuration.
     save_vocab(
         vocab,
         model_dir / "vocab.json",
     )
 
-    with open(
-        model_dir / "config.json",
-        "w",
-        encoding="utf-8",
-    ) as file:
-        json.dump(
+    (
+        model_dir / "config.json"
+    ).write_text(
+        json.dumps(
             cfg,
-            file,
             indent=2,
-        )
+        ),
+        encoding="utf-8",
+    )
 
-    # Final evaluation.
-    all_metrics = {}
-    test_predictions = None
+    # --------------------------------------------------
+    # Final evaluation
+    # --------------------------------------------------
 
-    for split_name, loader, df in (
+    results = {}
+    predictions = None
+
+    for split, loader, df in (
         ("val", val_loader, val),
         ("test", test_loader, test),
     ):
 
-        yt, yp, ypr, _ = evaluate(
+        yt, yp, yprob, _ = evaluate(
             model,
             loader,
             device,
         )
 
-        all_metrics[split_name] = compute_metrics(
+        results[split] = compute_metrics(
             yt,
             yp,
-            ypr,
+            yprob,
         )
 
         print_metrics(
             "Model B: LSTM",
-            split_name,
-            all_metrics[split_name],
+            split,
+            results[split],
         )
 
-        if split_name == "test":
+        if split == "test":
 
-            test_predictions = pd.DataFrame({
-                "id": df["id"],
-                "text": df["text"],
-                "true_label": df["label"],
-                "pred_label": [
-                    "Yes" if prediction == 1 else "No"
-                    for prediction in yp
-                ],
-                "prob_actionable": ypr,
-            })
+            predictions = pd.DataFrame(
+                {
+                    "id": df["id"],
+                    "text": df["text"],
+                    "true_label":
+                        df["label"],
+                    "pred_label": [
+                        "Yes" if p else "No"
+                        for p in yp
+                    ],
+                    "prob_actionable":
+                        yprob,
+                }
+            )
 
-    # Save results.
     save_results(
         cfg["model_name"],
         Path(cfg["results_dir"]),
-        all_metrics,
+        results,
         cfg,
         history=history,
-        predictions=test_predictions,
+        predictions=predictions,
     )
 
     print(
-        f"Best checkpoint: {best_path} "
-        f"(epoch {best_epoch}, "
-        f"val F1={best_f1:.4f})"
+        f"Best checkpoint: {best_path}"
     )
 
 

@@ -1,13 +1,11 @@
-"""LSTM classifier using pretrained word embeddings."""
+"""Model B -- pretrained embedding + BiLSTM + dense classifier."""
 
 import torch
 import torch.nn as nn
 
 
 class LSTMClassifier(nn.Module):
-    """
-    Token IDs -> pretrained embedding -> BiLSTM -> dense -> Yes/No.
-    """
+    """Token IDs -> pretrained embedding -> BiLSTM -> dense -> 2 logits."""
 
     def __init__(
         self,
@@ -24,13 +22,13 @@ class LSTMClassifier(nn.Module):
 
         self.pad_id = pad_id
 
-        vocab_size, embed_dim = embedding_matrix.shape
-
         self.embedding = nn.Embedding.from_pretrained(
             embedding_matrix,
             freeze=not embedding_trainable,
             padding_idx=pad_id,
         )
+
+        embed_dim = embedding_matrix.shape[1]
 
         self.lstm = nn.LSTM(
             input_size=embed_dim,
@@ -45,13 +43,9 @@ class LSTMClassifier(nn.Module):
 
         output_dim = hidden_dim * (2 if bidirectional else 1)
 
-        self.fc = nn.Linear(
-            output_dim,
-            num_classes,
-        )
+        self.fc = nn.Linear(output_dim, num_classes)
 
     def forward(self, input_ids: torch.Tensor) -> torch.Tensor:
-
         lengths = (
             (input_ids != self.pad_id)
             .sum(dim=1)
@@ -59,9 +53,7 @@ class LSTMClassifier(nn.Module):
             .cpu()
         )
 
-        embeddings = self.dropout(
-            self.embedding(input_ids)
-        )
+        embeddings = self.dropout(self.embedding(input_ids))
 
         packed = nn.utils.rnn.pack_padded_sequence(
             embeddings,
@@ -70,16 +62,14 @@ class LSTMClassifier(nn.Module):
             enforce_sorted=False,
         )
 
-        _, (hidden, _) = self.lstm(packed)
+        _, (h_n, _) = self.lstm(packed)
 
         if self.lstm.bidirectional:
             state = torch.cat(
-                [hidden[-2], hidden[-1]],
+                [h_n[-2], h_n[-1]],
                 dim=1,
             )
         else:
-            state = hidden[-1]
+            state = h_n[-1]
 
-        state = self.dropout(state)
-
-        return self.fc(state)
+        return self.fc(self.dropout(state))
