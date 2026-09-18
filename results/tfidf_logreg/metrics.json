@@ -1,0 +1,98 @@
+{
+  "model": "tfidf_logreg",
+  "config": {
+    "model_name": "tfidf_logreg",
+    "seed": 42,
+    "splits_dir": "/kaggle/working/mailsense/data/splits",
+    "results_dir": "/kaggle/working/mailsense/results",
+    "models_dir": "/kaggle/working/mailsense/models",
+    "lowercase": true,
+    "ngram_range": [
+      1,
+      2
+    ],
+    "min_df": 2,
+    "max_df": 0.9,
+    "sublinear_tf": true,
+    "max_features": null,
+    "C": 1.0,
+    "class_weight": "balanced",
+    "max_iter": 2000
+  },
+  "metrics": {
+    "val": {
+      "accuracy": 0.7974452554744526,
+      "precision": 0.7975708502024291,
+      "recall": 0.7635658914728682,
+      "f1": 0.7801980198019802,
+      "macro_f1": 0.7961903804593657,
+      "weighted_f1": 0.7971242409357094,
+      "true_positives": 197,
+      "true_negatives": 240,
+      "false_positives": 50,
+      "false_negatives": 61,
+      "confusion_matrix": [
+        [
+          240,
+          50
+        ],
+        [
+          61,
+          197
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "rows": "true",
+        "cols": "predicted",
+        "order": [
+          "No (0)",
+          "Yes (1)"
+        ]
+      },
+      "support": {
+        "n": 548,
+        "actual_yes": 258,
+        "actual_no": 290
+      },
+      "roc_auc": 0.8786554397219994,
+      "classification_report": "                     precision    recall  f1-score   support\n\nNon-Actionable (No)       0.80      0.83      0.81       290\n   Actionable (Yes)       0.80      0.76      0.78       258\n\n           accuracy                           0.80       548\n          macro avg       0.80      0.80      0.80       548\n       weighted avg       0.80      0.80      0.80       548\n"
+    },
+    "test": {
+      "accuracy": 0.7773722627737226,
+      "precision": 0.7698412698412699,
+      "recall": 0.751937984496124,
+      "f1": 0.7607843137254902,
+      "macro_f1": 0.7762965937228133,
+      "weighted_f1": 0.7772024202920002,
+      "true_positives": 194,
+      "true_negatives": 232,
+      "false_positives": 58,
+      "false_negatives": 64,
+      "confusion_matrix": [
+        [
+          232,
+          58
+        ],
+        [
+          64,
+          194
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "rows": "true",
+        "cols": "predicted",
+        "order": [
+          "No (0)",
+          "Yes (1)"
+        ]
+      },
+      "support": {
+        "n": 548,
+        "actual_yes": 258,
+        "actual_no": 290
+      },
+      "roc_auc": 0.8606655974338413,
+      "classification_report": "                     precision    recall  f1-score   support\n\nNon-Actionable (No)       0.78      0.80      0.79       290\n   Actionable (Yes)       0.77      0.75      0.76       258\n\n           accuracy                           0.78       548\n          macro avg       0.78      0.78      0.78       548\n       weighted avg       0.78      0.78      0.78       548\n"
+    }
+  }
+}

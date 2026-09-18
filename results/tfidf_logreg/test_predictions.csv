@@ -1,0 +1,549 @@
+id,text,true_label,pred_label,prob_actionable
+1,Act now to keep your life on the go!,No,No,0.32458072665837195
+13,"If you do not want to confirm, simply ignore this message.",No,No,0.47642014972011204
+14,"If you don't want to change your password, just ignore this message.",No,No,0.2868028282853591
+20,"In the event that he does phone, we would $NUM like to make sure that Mr. Lay gets this information prior returning the call.",No,No,0.46947949468098377
+21,Join now:,No,Yes,0.5399695126875261
+34,Please use the link below to activate your account.,No,Yes,0.7633487481710157
+40,Start Clicking Here Now If You Want It $LINK,No,No,0.3814862406858674
+64,I will send an e:mail later in the day to see when we can get together.,No,Yes,0.5320541649875634
+87,The issue is a great example of the intersection of our business interests with public policy debates and should promote a lively discussion when we get together.,No,No,0.3389571615281677
+91,We either need to have someone riding herd on Tozzini on this (I thought it was Jose) or I need to go to SP and make this happen.,No,Yes,0.5277163708537429
+95,We want to welcome you to the Horizon Card Services family of products and feel confident that you will soon realize the full benefits of this wise credit decision as you join the thousands of other highly satisfied Horizon Gold Card privileged Members.,No,No,0.37969696224373733
+98,"We're going to have a Legal happy hour tomorrow at the Blue Agave, and it would be no party without you there.",No,Yes,0.6220398971766371
+112,"Hello My Dear, my name is Cynthia,I read your information on face book,and find it truly interesting .That is why I am contacting you so that we can get to know each other better for personal relationship , beside I have a special issue to discuss with you on a very serious note ; i hope to hear from you soon .",No,Yes,0.685000254699252
+121,I would like to welcome @HillaryClinton the future ............you know what to Twitter!,No,Yes,0.5759833077893917
+122,I would love to be there but unfortunately I can't make it.,No,No,0.35624354780252043
+130,"If you don't think you'll have your book finished in time we don't want you to miss out on this fantastic sale, so until $NUM June $NUM you can purchase one of our Gift Vouchers at $NUM% off*.",No,No,0.36997095294641663
+134,"Instead, I want to meet with Frank Vickers and Ed Baughman (I have known both for years and we get both gas and power covered) either Friday afternoon or Monday to go over the presentation in person and get their thoughts and input (Rahil included).",No,Yes,0.6254302893974962
+143,"Specifically, we are looking for names and addresses of the following:",No,No,0.261722086001366
+161,We will update tomorrow!,No,No,0.40093992716078836
+166,"When you SOW A $$NUM FAITH SEED, let me tell you what I am going to do... • I will place your name in my Bible for the next year.",No,Yes,0.6905616299902444
+186,"So, especially given the post-$NUM/$NUM logistics, it doesn't seem practical for me to come to Dallas for this meeting.",No,No,0.38343702699643856
+187,I think that moving forward in my new job will not allow me the time to continue our sessions.,No,No,0.30709690058701256
+189,"So rather than discuss the transition, Kevin had to react to and absorb this as a possibility.",No,No,0.49203768566217504
+197,Hurry below and choose a reward you'd like to earn.,No,No,0.3707666518289652
+200,"I am copying her on this email so that if I am mistaken, she can let me know.",No,Yes,0.7645384133779373
+201,"You can use LINE both on iPhones and Androids, download it from here and add me as a friend.",No,No,0.394863998491967
+202,Well let me tell you...,No,Yes,0.8162111882031221
+205,Let me just download the new app.,No,Yes,0.6801704889218093
+206,Let me sum this up real quick...,No,Yes,0.7506943312452877
+216,"...And if you'd like me to answer your question on a video or podcast, please fill out this short survey.",No,Yes,0.7893122962385917
+219,"Actually, you could set the priorities for us.",No,Yes,0.6763451581904278
+230,Do you want to make a difference?,No,Yes,0.5048417103054955
+241,I haven't met Kevin yet so if you could mention this to him I would appreciate it.,No,Yes,0.5911996751142521
+246,I plan to get off @ 4pm and check in the hotel a.s.a.p.,No,No,0.44366496104084496
+252,I will call ISDA and try to get a read on what ISDA wants to do which is not clear at this point.,No,No,0.4793597982159046
+269,"If you ever change your mind and want to give Pinger another try, you can always get a new number.",No,No,0.4357461052193678
+276,"If you use Pinger to text and call people who are NOT using Pinger, you might want to keep your Pinger number ($NUM) $NUM active.",No,No,0.3610150325039154
+279,If you want to learn more about our products visit mobile.intersog.com.,No,Yes,0.5247777647444097
+288,"If you'd like to turn off these messages, please visit your notification settings.",No,Yes,0.6025834034775122
+293,Jus call me Nessa ♌ @finesse__ah,No,Yes,0.8575107302828205
+295,Millions of businesses desperately need your help and the valuable services you could provide them if you want to.,No,Yes,0.539277087821484
+315,We hope you find something you like!,No,Yes,0.5251270532170532
+317,"Whether you want to give the gift of organization or make your own life a little simpler, it's the best time of the year to get Neat!",No,No,0.2752344811586097
+330,"If you activate your account today, you can claim one of the offers below:",No,Yes,0.5673486813255144
+337,* Tap the command you want to use,No,Yes,0.5237551127722045
+343,- Offer valid until the 31st of March,No,No,0.31286907401447345
+378,"According to the TNRCC, they will allow this activity provided that the above is true and that we prove that emissions and horsepower will not increase.",No,No,0.2049057070587544
+379,"According to the contract, when volumes are overdelivered, HPL buys the gas at GD-.$NUM.",No,No,0.3998828603803391
+384,"After making a few changes, AA should be forwarding to you a copy of the draft document later this afternoon.",No,No,0.3540475516545326
+385,"After reveiwing the documents entitled, ""Baseline Environmental Investigation of Arco North Coles Levee Plant $NUM, Rogas Loading Facility and Associated Natural Gas Pipeline Systems Kern County, California"" and ""Report of Preliminary Asessment Sampling North Coles Levee Gas Plant Loading Rack Area Tupman, California"", it appears that the following areas should be investigated further to detemine horizontal and vertical extent of identified contamination from the above referenced reports:",No,No,0.238687381924822
+387,"Agree that humor is needed right now, though it's in short supply, so to speak....",No,No,0.3286043168986091
+391,All business voice mail messages require a prompt response from our business unit.,No,No,0.18546833386766956
+392,"All of these technologies will be added to an ever-growing traffic flow of email, messaging, searches, and business communications.",No,No,0.20957200198608458
+397,Also I have some reading for you tonight - The Skiliing Story is all over the Gas Market.,No,No,0.3223956868231447
+400,"Also for your information, we are working on $NUM acquisition deals that will be coming out soon, $NUM is to buy a mill and coul d be announced next week, which will also clarify and add to the story since we will have access to physical pulp and paper.",No,No,0.30379058085749017
+401,Also how fast does this machine get to.,No,No,0.345131756071789
+406,"Also, the changes in the structure of gas demand require development of different types of storage (more peaking storage).",No,No,0.20525709033152043
+418,And change the order of some items by pressing and holding the $NUM gray lines next to the item you want to move - and dragging the item up/down,No,No,0.4080648505928158
+441,April $NUM $NUM/day delivered to Mobil Beaumont at IF HSC - .$NUM.,No,No,0.2625762533883074
+455,"As for meeting with Herman, should J Keenan be included as well?",No,No,0.3694365574105153
+459,"As we discussed this morning, I have reviewed the subject agreement that you faxed to me.",No,No,0.34463974771028244
+466,As we discussed...,No,No,0.20861405371651848
+474,"At the meetings, I think it would be helpful to go through the following discussions/agenda: a) review the Brazilian and Argentine gas and power markets - flows, grid, participants (bids and offers), assets, pool structures, regulatory and political environment, currency and credit challenges, supply and demand & historical prices and volumes; b) review ESA's current regulated/un-regulated assets and generation strategy; c) review ESA current book positions, market views, products and product development; and d) brief review of other S. American markets.",No,Yes,0.5144275196202004
+484,August $NUM How to Add a New Version to Your Post,No,No,0.25118789185452967
+492,Based on our discussions this morning:,No,No,0.43999041167245617
+502,"Beth is in fact in Monterrey, Mexico today and tomorrow, completing a review of that office.",No,No,0.28422334229191143
+508,"Bob, there also are legal issues to address, so I appreciate your keeping me in the loop as this evolves.",No,Yes,0.5315219560352564
+510,Brett wiggs tells me that he faxed me signature pages last week.,No,No,0.42504452592202807
+520,"But eventually we have to address issues beyond grieving, helping, and bringing the lunatics to justice.",No,No,0.318959220108839
+524,"But while the (otherwise perishable) thoughts are still fresh in my mind from the hearings on Monday and Tuesday, I wanted to throw out some observations for discussion in the days/weeks ahead.",No,No,0.3017713744377111
+540,"Chris, did we get the DASH completed and approved on Pasotria and LV Cogen?",No,No,0.4162750155148221
+556,Currently there are no bids ( Scott and I will get with Dick this afternoon).,No,No,0.25080897067983365
+562,"Dad doesn't know I called today, so I can call him tomorrow when we are on the way, talk to Mom and let her know when we will be there.",No,Yes,0.7580970521878769
+563,Dal Coger Tsunami Partners Executive Search & Selection Ph # $NUM Ph # $NUM Cell $NUM Fax $NUM wireless email $EMAIL,No,No,0.2274188271529446
+564,"Daniel, Laura Luce would like to send the latest Enovate DPR to the chairman of People's Corp.",No,No,0.341831285024467
+565,"Date: Wednesday, July $NUM, $NUM",No,No,0.1894508836133514
+577,Doesn't look too good right now.,No,No,0.27091122271677726
+592,Dynamics Jobs - United States - $NUM days ago,No,No,0.19650397364932998
+600,"Ed, We have removed the specific examples of Force Majeure as not being needed because the revised $NUM defines force majeure as an event not anticipated as of the date hereof, which is not within the reasonable control of the party and which by the exercise of due diligence such party is unable to overcome or obtain a commercially reasonable substitute performance thereof, all without listing specific types of events which might be considered.",No,No,0.22942157980363417
+608,Enron is in active discussions with DWR to establish contract terms with th e goal of entering into a power purchase agreement as soon as possible.,No,No,0.27816133085926337
+612,Episode #$NUM with Jacqueline Garlick and episode #$NUM with Johnny B. Truant are now live!,No,No,0.16629893026206402
+627,FYI before I delete this email.,No,No,0.4219979548046935
+632,Facebook helps you communicate and stay in touch with all of your friends.,No,No,0.3437717582983744
+641,"Finally, if you have any questions, have any difficulties or feature requests, please email us at $EMAIL",No,No,0.47447750082141854
+642,"Finally, there have been general comments from Treasury and Fed Bank officials to guarantee stock exchange payments, and the assumption is that the same guarantees would apply to the NY commodity exchanges (but this asumption has not been validated or addressed directly in public comments).",No,No,0.1618939436504357
+645,"For August forward, I believe we should just bill you for the actual metered production volumes since the imbalance will be in Clinton's pool.",No,No,0.26858275129276254
+646,"For example, all ""XYZ Company"" purchases will be displayed together (see sample below).",No,No,0.3115833866616048
+647,"For example, all XYZ Company purchases will be displayed together (see sample below).",No,No,0.3115833866616048
+648,"For the luncheon during the week of April $NUM, I am available on April $NUM, $NUM, $NUM or 19th.",No,No,0.3874048627435722
+663,Good Morning America,No,No,0.3350394446907595
+681,He agrees to be available and cooperative with Enron and its counsel regarding litigation matters.,No,No,0.3183154083201609
+683,"He brought it to Calpine's attention immediately upon being contacted by ENA. $NUM. Christina argued, as she did in the answer and counterclaim, that the non-compete agreement was fatally overbroad, as Miller never had any duties involving the majority of the activities from which the non-compete purports to bar him.",No,No,0.11872163257599655
+686,"He got to climb all over the fire engines and even get into the driver's seat and ""drive.""",No,No,0.26003068704895016
+698,Here is what we have concluded based on discussions this morning:,No,No,0.3201443079066137
+699,Here's a note I'd like to share with you:,No,No,0.2810356058518102
+702,"Hertzberg acknowledged that some Assembly members were afraid the bill was getting rushed, but he said lawmakers are well-informed about the energy crisis and its details.",No,No,0.1867764188167579
+709,Holiday Monday money $NUM:$NUM PM - $NUM Sep $NUM,No,No,0.23926004253445876
+719,"However, I have forwarded her resume to Settlements and Volume Management.",No,No,0.33134695118375684
+725,"However, we continue to encourage qualified candidates to view the listing of professional posts available at $LINK and apply for the positions they feel are best suited to their experience and qualifications.",No,No,0.24023581219355777
+729,I am available for questions at xt. $NUM.,No,No,0.3585110387652222
+742,I am offering property in the Emerald Triangle,No,No,0.2978338389582315
+747,I am still at the office hoping to get away before dinner so that I can head home and pack.,No,Yes,0.6470253556042174
+748,I am still really crunched tomorrow morning.,No,No,0.42007005595052926
+751,I am very thrilled about this opportunity because not only do I want to gain professional experience in the field of marketing but I would also like to do work that is centered around what I love and that's books.,No,No,0.27328253475655734
+763,I can provide you concrete data regarding the benefits that our customers have got by working with our Software Factory.,No,No,0.4520242855601998
+766,I can't make it during lunch.,No,No,0.4762517625272073
+769,I definately would not discuss this with Petrobras.,No,Yes,0.8302778346687607
+775,I didn't get to sleep until 3am.,No,No,0.21172330182628385
+776,I didn't have a check off list of the ones that I made copies of and submitted but I do know for sure that I turned in Co.$NUM.,No,No,0.31491742998957817
+779,I don't feel so good when I'm writing all those checks.,No,No,0.3997249732204603
+791,"I don't think they carry Polk, but ask them who you should call for Polk speakers.",No,No,0.43340734226979477
+794,I feel that this would be a great opportunity to contribute to the growth of the startup and a way for me to explore new aspects of the marketing industry.,No,No,0.3926597931131152
+795,I filled him in on the Energy Management degree and told him that I thought that his group should talk with you about a possible rotation.,No,No,0.3992929503099748
+804,I had problems in getting the newest version of Access.,No,No,0.27994188245917484
+805,"I had the sense that she was feeling that she'd done a bunch of work that was ending up on the cutting room floor and that she wasn't getting a real opportunity to participate in the shaping of the analysis, the presentation, or responsibility for taking a piece of the presentation for Thursday.",No,No,0.2652439600253534
+815,I have attached a revised resume for you to send to the managers and recruiters if you have not already.,No,No,0.4669402784552902
+831,I haven't checked affair yet.,No,No,0.25799923648365797
+835,"I immediately resolved that my path and that of ""Susman, my man, Steve Susman"" would never again cross.",No,No,0.2682882298380711
+840,"I kept getting a message like ""We're sorry, this number does not accept calls from unidentified numbers"" or something like that.",No,No,0.30989865350817825
+854,I look forward to seeing you in Dallas next week.,No,No,0.3438390613151037
+856,I look forward to talking further about the possibilities.,No,No,0.36540761563308766
+860,I never did make it to Toronto this summer.,No,No,0.25275081467067984
+863,I plan to write her in a couple of weeks to follow up with any additional leads I've found.,No,No,0.3590212803693419
+870,I shall send you more information regarding the dinner later this week.,No,Yes,0.592791767898559
+871,"I should be able to get back with you next week, hopefully with a change in our strategy!",No,No,0.3996108381105018
+878,I talked to grandma and she said Julie wouldn't be able to make it so I already knew about that.,No,No,0.21721873030532557
+883,I think it's fuzzy enough that two good lawyers could give two different views--wanted to ensure that all analytic bases are covered.,No,No,0.24604863863207704
+891,I think you saw my thoughts about this conference in a previous email exchange with Schroeder re: Littlechild.,No,No,0.48055769588180114
+897,"I understand you will be forwarding to Jim Staffus (sp?), your VP of gov't affairs.",No,No,0.39302456189029467
+929,I will try to get it notorized and mailed back to the lawyer today.,No,No,0.49380278739724004
+951,I'll forward in another email the language that the coalition has drafted and hopes Bowen and Keeley will carry.,No,No,0.2189114026775103
+955,I'll give it back to you this evening.,No,Yes,0.5138207470332886
+957,I'll let you know what Calger sez soon as he gets back to me.,No,Yes,0.5969314161141431
+960,I'll send details on hen night later.,No,No,0.3780210760684991
+972,I'm letting her make the first cut.,No,No,0.30044768447621284
+975,"I'm not sure if this is automatic or if you have to actually do something to make sure it happens, but either way, THANK YOU! Flying on this flight stinks and it would be even worse in the back of the bus!! DF",No,No,0.24276947032827495
+981,"I'm working on my assistant's computer, who has sharing rights to my email.",No,No,0.24261904973980003
+995,"If I'm reading this correctly, the forwardhaul and the backhaul commodities are the same now.",No,No,0.18344908822366263
+1012,"If you are expecting a baby or planning to have a baby, your doctor can run many tests to help assess the health of both you and your baby.",No,No,0.40652143835937027
+1016,"If you believe Syaiful Bahri is engaging in abusive behavior on Twitter, you may report Syaiful Bahri for spam: $LINK",No,No,0.3857346794398143
+1017,If you choose not to keep your account after your trial has expired -- just do nothing.,No,No,0.4755547201454975
+1020,If you decide not to log into soonr.com,No,No,0.3692352473867944
+1021,"If you do not want to change your password, then please ignore this e-mail and no changes will be made.",No,Yes,0.5066373707121409
+1025,"If you don't want any more messages from us, we'd be happy to remove you from all email communication from IndividualHealthQuotes.",No,No,0.2805082233615599
+1028,"If you don't want to receive these emails from Facebook in the future or have your email address used for friend suggestions, please follow the link below to unsubscribe.",No,No,0.26856464451109324
+1038,"If you have any questions about the new name, please visit our FAQ at $LINK and read our blog post at $LINK explaining the reasons and important considerations.",No,Yes,0.5602344055483255
+1044,"If you have any questions or concerns, feel free to contact us at $EMAIL.",No,No,0.19496381746312694
+1051,"If you have any questions regarding PCHPlay&Win, please visit the pch .com:",No,Yes,0.5907269112171376
+1056,"If you have any questions, please check the support page on our website: $LINK",No,Yes,0.6462332405489819
+1059,"If you have any questions, visit our support forum at $LINK",No,No,0.38065417658932754
+1064,"If you have questions, please email us at $EMAIL.",No,Yes,0.5110993466108494
+1071,"If you need help or need to contact us, please visit our",No,Yes,0.7450024425444592
+1076,"If you no longer want to receive these emails, you can unsub $LINK",No,No,0.2112008693358311
+1082,"If you prefer not to receive commercial email from Apple, or if you've changed your email address, please click here.",No,No,0.3111997355478063
+1086,"If you really want to win, Jude, now is the time to act!",No,No,0.22859095367813817
+1095,"If you want to go to the early show, we won't be offended.",No,Yes,0.6289653379046743
+1104,"If you would like to know who they are, where they live, and how you ca protect your family from sexual predators, please click here.",No,No,0.4604727562270886
+1109,"If you would like to stop receiving messages from us, Unsubscribe.",No,No,0.25153970988008895
+1123,"If you'd prefer to wait for the non-beta version, that will be available by the end of April.",No,No,0.2938197994535611
+1126,"If you're unsure which loan type or program is right for you or what the next step is, don't worry you can contact us anytime and we will guide you along the way.",No,No,0.48970063361105765
+1129,"In a motion on the Senate floor, lawmakers killed an amendment to a broader bankruptcy reform bill that opponents said was a dangerous proposal that would have opened the door to involuntary bankruptcy filings by troubled California utilities.",No,No,0.3136108732486285
+1130,"In a recent CommodityLogic staff meeting, I took stock of the number of people and projects that I have provided from Energy Operations to that team.",No,No,0.19870156540377304
+1136,"In fact, the IRS has expanded the options this year for obtaining a filing extension.",No,No,0.23897094055845758
+1147,"Instead of creating such a system, which apparently turned out to be mostly a manual system anyway, ECS is going to pay us a monthly fee to monitor CD's system peaks ourselves and decide when we need to get off line.",No,No,0.3761084897523713
+1152,Is one of our agenda items to make sure that someone's attending any such hearings and reporting back?,No,No,0.402350475222878
+1153,Is your new address working?,No,No,0.38473245955908986
+1154,"Issues include salaries of employees hired by buyer (effect of Enron severance plan), other benefits for divested employees (including unvested stock options, insurance, vacation, etc.), process for divesture, payment of severance obligations, possible redeployment, etc.",No,No,0.3860189711152198
+1162,It is ok to provide the requested information.,No,No,0.32815037736590663
+1180,Item $NUM: Monday General News $LINK,No,No,0.24920885701434295
+1183,I’d like only five minutes of your time to connect briefly to answer any questions you have on our material and discuss how uTest may be able to aid in your own testing initiatives.,No,No,0.48656413041902397
+1184,I’d love to hear your feedback on the app so please feel free to contact me anytime.,No,Yes,0.7084926400118607
+1194,Joanie found the email from CALP stating they did receive the wire payment.,No,No,0.15246228492029365
+1207,Just looking for someone to finance the development of my land.,No,No,0.20286904006122855
+1215,Kayla01235 can now play!,No,No,0.2697858085660645
+1224,LAST WEEKEND TO BOGO + $NUM% OFF + FREE SHIPPING!,No,No,0.2052014848170425
+1238,Look forward to reviewing your proposal.,No,No,0.274898854252135
+1241,Looking forward to hearing from you.,No,No,0.4036029507928681
+1248,"MG Metals -- handled issues surrounding termination of Rudolph Wolff employees, including separation agreements, negotiations with counsel, etc. Project Falcon -- reviewed diligence reports, client discussions.",No,Yes,0.5115759940505306
+1254,Married folks with kids... get a baby sitter!!!,No,No,0.3639700794751627
+1256,May make a difference in information provided.,No,No,0.27840056887043724
+1257,McDonald's and Burger King collide and we want to know which fast food restaurant do you prefer.,No,No,0.4779112839019154
+1264,"Michael Tribolet and I (about $NUM% Michael) have put together a rough cut analysis of the core/noncore structure, and some scenarios Hertzberg has asked for.",No,No,0.28283125830427
+1266,"Mike's wife decided not to make the trip, so he won't be using the tickets.",No,No,0.2918685403691231
+1267,Mitchell Falls ~ Western Australia $LINK,No,No,0.3102699177225831
+1275,"Monday, May 14th",No,No,0.34444097985837074
+1282,"Mr. Stewart, as per you voice mail request to me on Feb. $NUM, $NUM, attached is the correspondance concerning the reqeust to replace the mixing valves with carbuerators at the Northern Natural Gas, Spraberry Plant.",No,No,0.3249202873368027
+1291,My focus is to help Enron people get back to work (Permanent or Contract openings).,No,No,0.2952403857010404
+1294,My reading of the email to all employees is that it does not include temporary employees.,No,No,0.1618342359010425
+1297,NYISO Customer Relations staff has sent this e-mail notice to you because a resolution is included.,No,No,0.25021464996544684
+1306,"Nokia estimates it is likely to earn $NUM European cents a share in the first quarter, in line with estimates it provided in January.",No,No,0.13012225248807374
+1332,"On the means of delivery, I am not sure from your note whether or not I fully understand the intent.",No,No,0.27534963600426404
+1337,One Week to Christmas,No,No,0.3671709888785053
+1354,PS I apoligize if you got this email message twice; I have two email,No,No,0.31986420805654076
+1363,"Per my voicemail, we will need the executed guaranty by Tuesday, October $NUM $NUM, $NUM.",No,No,0.3215048797437445
+1367,"Permitting and Air Quality Issues Developers of distributed (i.e., =$NUM&on-site=$NUM) generation that is $NUM MWs or greater must receive certification from the California Energy Commission an d therefore faces all of the impediments to development that large-scale generation faces.",No,No,0.1569885971600606
+1369,Please click the link below to confirm that you'd like to receive emails from Home Based Business Sign Ups.,No,No,0.33652007889181845
+1371,"Please do not hesitate to email with any questions you may have, and once again thank you for all your support!",No,Yes,0.555369156539363
+1382,Presents to please just about everyone—at prices that will more than please you.,No,Yes,0.7048458621121687
+1390,Questions which arose during my discussions with Sue Garven today concerning the turbine performance and associated warranty and TAA issues.,No,No,0.33690113414930634
+1396,"RedDot provides software that enables business users to simply maintain their web site by ""clicking on the red dot"".",No,No,0.45093241910957216
+1397,RedDot provides software that enables business users to simply maintain their web site by clicking on the red dot.,No,No,0.45093241910957216
+1400,"Rest assured if you don't want to sell any of your projects you don't need to do anything, all your work is kept private.",No,No,0.48011333758963887
+1408,SEARCH NOW IF YOU WANT TO WIN!,No,No,0.2727429969869165
+1409,SERC- For Saturday we sold 200MW (HE15-$NUM for a $NUM hour take) @ $$NUM.,No,No,0.34339098316282657
+1410,"SOCO, OPC will be on the bid for Monday.",No,No,0.3744827323594105
+1411,Sally asked me to forward this to you FYI.,No,No,0.4415871491111676
+1413,Sally's recommendation to include Joannie is necessary to make sure everyone knows The Plan for the Enron board dinner and any other future Enron/Lay joint function that Ken and I might host.,No,No,0.39223970110135337
+1426,See you tomorrow!,No,No,0.4174046893207019
+1430,"Sent you a project proposal last Thursday on behalf of Dasovich, Guinney, Sama and Vavrek and just wanted to make sure that you received it.",No,No,0.2814622457829217
+1434,Services like $NUM And Me let people understand themselves better by analyzing their genome.,No,Yes,0.5295262264089567
+1437,"She can provide you with any information and/or assistance that you need and can also get you in contact with Edelman, the PR firm directing the media effort.",No,Yes,0.5407130114183883
+1439,She has also been discussing the utilities with outside counsel and we may be able to open more up for trading.,No,No,0.3099743672884745
+1451,So I am asking all MyLifeOrganized customers to consider writing at least short review for MLO-iPad on AppStore mentioning what you like and probably what you want to improve.,No,Yes,0.6084392443016382
+1459,"So, in order to correctly estimate our economics, I changed the price on the delivery to reflect how the deal will settle.",No,No,0.32144091044776896
+1462,Sometimes you want to deal with something later.,No,Yes,0.5043342840640449
+1478,Stan is in DC today but will be back in the office tomorrow morning.,No,No,0.2881230891357473
+1479,Steve Kean asked that I be the Enron participant at a Women in Business panel discussion at Columbia School of Business.,No,No,0.2634955836896705
+1482,Sue stopped by and wanted to discuss your email re: launching missiles over email to the world.,No,Yes,0.6002880976387382
+1484,Sure family walk - I get the message (finally) I will communicate with you via E-Mail.,No,No,0.3225451062774431
+1485,"Sure, we all need a little pick-me-up every now and then in the form of a latte or a new outfit, but by the time you're $NUM, you've probably figured out which expenditures make you really happy and which fizzle fast.",No,No,0.2568400857309941
+1495,"Thank you for installing our Staunton's Group Pass, we hope you enjoy using it.",No,No,0.2648812887715416
+1496,Thank you for the email.,No,No,0.2077258693669345
+1499,"Thanks Susan, that makes sense.",No,No,0.19516668027955072
+1500,Thanks a lot and I look forward to seeing you guys on Wednesday.,No,No,0.3121273378073163
+1508,"Thanks, but ain't gonna happen this week.",No,No,0.23056264800503948
+1513,That is the only gibberish that you should be receiving.,No,No,0.3734987350940206
+1515,That power shortage Friday cut us off in the middle of our conversation about the appropriate tax language to use for a confirmation evidencing a trade between Teeside Power Financing Limited and RMT.,No,No,0.37375925933975856
+1520,"That was his concern yesterday, and Kim's note really doesn't address that.",No,No,0.2224243258981277
+1522,That would send a pretty strong signal to the market that we are serious about deadlines.,No,No,0.4986700852634042
+1528,The East Desk is having a meeting tomorrow at the same time to discuss the split out of the East Desk into $NUM new books.,No,No,0.46436835789581393
+1529,"The Enron attendees for tomorrow's meeting are: Ken Lay, Marty Sunde and Bob Williams.",No,No,0.3769826295275886
+1533,The Republican lawmakers said the commission is responsible for nearly forcing the utilities into bankruptcy.,No,No,0.2856995435914043
+1534,The Rockets need scorers and Alexander will produce during individual workouts.,No,No,0.42718841284450765
+1570,The new HomeRun by Deem offer for $$NUM for Two Admissions to a Bridal Expo at Chateau Elan on August 18th is up here: $LINK,No,No,0.23080815484023376
+1577,The only red flag is the perception of marketers being in the same room together.,No,No,0.23141845641219472
+1579,The position unites all the Field Operations actions together with the world wide corporate business plan:,No,No,0.2339199975106668
+1584,The reason I'm concerned is that when my brother moved he did a change of address and my mail has been screwed up ever since.,No,No,0.14847013250399307
+1585,The referenced Diamond Shamrock/Koch joint venture would like to execute the same one.,No,No,0.3634054081838819
+1589,The returns and value provided by these companies will be primarily be based on the timing of new production and their asset base and they will realize (on a relative basis) very little from the trading.,No,No,0.2158536090460606
+1590,The risk is showing the value of SJ to Socal topock (currently wide spreads for $NUM) on the transport when it actually has less value delivering to Mojave topock.,No,No,0.2836196860001811
+1597,The top book pick for you this week comes from Katie Kieffer who discussed:,No,No,0.35757880229816025
+1598,The topics covered in the manual addressed all environmenatl issues that the company appeared to be involved with.,No,No,0.27527825598256517
+1631,"They were completely outclassed against the one (albeit right now, the best team in the country) good team they have played.",No,No,0.18655317052803722
+1633,Think about how your experience and skills fit into the job description of a position you want to apply for.,No,No,0.45346169490783744
+1636,This case is killing me! $NUM) I had to get before $NUM AM today.,No,No,0.4217488499624505
+1638,This e-mail and any attached files may be confidential and subject to attorney/client privilege.,No,No,0.3791863451568052
+1643,This free tell-a-friend service is made possible by our sponsors:,No,No,0.43817464729979205
+1648,This is a new one for us and they are taking their sweet time on getting the paper work back to us.,No,No,0.3008879665258335
+1661,"This letter addresses our attempts to find a solution to the PCB problem, and that remediation technologies are not presently available to operate effectively at the site given the sites unique characterisstics.",No,No,0.33179429432097163
+1663,"This might be one of those ""let me get Alan to help me for a free lunch"" things.",No,Yes,0.6244561122761281
+1678,"This workbook has a number of worksheets including: a) pkrs o&m - this details the o&m costs for the sold peakers assuming we own throught Q2 - charged to the OOC; b) driftPrepay - shows the detail as provided netting drift and pre-pay expenses - not all that relevant if you assume that increasing drift will be offset by larger monetizations; c) Summary - overall completed income statement - note that non-external capital charges are added back to reach EBIT; d) commercial income - guts of the commercial budget; e) group expenses - shows the detail on ENA net groups expenses, EIS/ENW/IT non-allocable, corporate charges not allocated to specific commercial groups and bonus/other comp; f) HP&L - takes a cut at HP&L income statement and balance sheet in $NUM assuming a sale by the end of Q2 - this needs some sit down work with Redmond; g) Balance Sheet Allocations - this defines by group the capital employed, assets to be sold and new capital expenditures expected in $NUM - then calculates a net capital and depreciation charge; h) Balance Sheet - this defines the existing balance sheet with no anticipated sales or increases by vehicle (ie) Enserco, JEDI, etc - merchant investments are charged @ a blended rate of $NUM% and strategic investments are charged @ a blended rate of $NUM%.",No,No,0.2458367802593565
+1685,Tim and I had both had Lee as a professor and I've been talking him about this conference alot and have no problem delivering whatever the news is.,No,No,0.22615561332368508
+1687,"Tim: I've worked hard with these guys to try to make this conference the best that it could be, but it ain't quite there.",No,No,0.30930565279909
+1691,"To claim your offer, reply today so we can help you activate your account before your trial expires.",No,Yes,0.7104842604151517
+1695,To view your invitation click the web address below or copy and paste it into your web browser: $LINK,No,No,0.4326470198602692
+1698,"Today at TechCrunch Disrupt SF, Naval Ravikant of AngelList, Balaji Srinivasan of genomics startup Counsyl, and Cameron and Tyler Winklevoss took to the stage to discuss all things Bitcoin with...",No,Yes,0.568856757222515
+1700,Today we're celebrating our birthday and we want to give you a birthday gift as our way to say thank you :),No,No,0.3138158458884375
+1701,"Today, we are pleased to announce a new revision of our SDK, that brings a massive improvement for use cases such as this one: a new image recognition mode that lets you disable **partial matching**.",No,No,0.3954415229448394
+1705,"Tomorrow and Wednesday are pretty bad, but Thursday and Friday are wide open.",No,No,0.3511393430027555
+1714,Trading voicemail with Jessie Knight (trying to get him to appear at the hearing).,No,No,0.2813791336714519
+1715,Trending this week,No,No,0.41896012984090536
+1722,Two Weeks Of Free Learning At lynda.com,No,No,0.24293188489670556
+1724,UNSUBSCRIBE: If you do not want to receive these alerts use the following link to unsubscribe.,No,No,0.3952317370454632
+1725,"Uncle Fern and I are still looking to come back to NJ, so my dream plan this summer would be to move back.... Other than that we’ll be indoors a lot.",No,No,0.47560677846708993
+1748,"We all know that this can be almost impossible on EPNG, but because of the current price levels at Socal and the basins, Enron needs to call each customer and notify them of their cuts with an explanation of the pipeline cuts each day to avoid any potential penalties.",No,No,0.4369585716249733
+1749,"We also maintain reasonable physical, electronic, and procedural safeguards in compliance with applicable laws and regulations to protect your nonpublic personal information.",No,No,0.4321812228714303
+1750,"We are continuing to handle month end close, and get all volumes scheduled daily.",No,No,0.3320013061550046
+1751,"We are continuously receiving new positions for qualified technical professionals, so check back frequently.",No,Yes,0.5052448887796595
+1762,We are still together.,No,No,0.39195822466461117
+1764,We are usually extremely busy during bidweek and we will be short handed.,No,No,0.4586133609391328
+1772,"We can't wait to send the daily updates on Coupons you want via email, so please click the following link to activate your subscription immediately:",No,Yes,0.7256606829756003
+1775,"We did not get this info., so Sitara was not adjusted.",No,No,0.25595989981818945
+1779,We finally got your postcards this week.,No,No,0.45588231045841376
+1781,We got a list of questions on various Online Trading issues from the Products Control Group which appears to be the group the will be managing the Online Trading HelpDesk.,No,No,0.3000417769716356
+1788,"We have identified three options: Amend AB1X The amendments, which are attached to this email, would clarify that a) the $NUM PUC would accept as =$NUM&prudent and reasonable=$NUM all purchase costs incur red by DWR, and b) the PUC is obligated to include in rates the charges necessary to ensure that DWR fully recovers its costs of power purchases.",No,No,0.20283090692490008
+1791,We have some grand ideas and need only your name and influence to make this a successful evening for TUTS!You and your wife may be as involved or not involved as you like!We would like to top the funds raised by this current year's event that was Co -Chaired by Chuck and Kim Watson .They helped TUTS to raise over $$NUM.,No,No,0.39714332754750575
+1795,We hope you enjoy and come back to us anytime.,No,No,0.4206804856170348
+1802,We may send this out a couple of days late.,No,No,0.3892456638825315
+1806,We remain excited and optimistic about the possibilities of a joint project.,No,No,0.408426852144714
+1817,"We want to help you understand your credit history and improve your knowledge about your credit score, and we hope you'll use your free trial membership to take advantage of the many benefits",No,No,0.3405458255034467
+1828,We would do this to the extent Judy could get the capacity.,No,Yes,0.7266753868435555
+1836,We're going to try (fingers crossed) to leave tomorrow afternoon.,No,Yes,0.5315728535795485
+1837,"We've grown very quickly these last few weeks and have been listening to feedback and working feverishly on making Opuss an even better place to write, read and share.",No,No,0.2608947982629257
+1842,"We’d like to continue sending you important information about your credit report, but only if you want us to.",No,No,0.404166142078422
+1849,What other topics would you like to read on Dygest?,No,Yes,0.6599959870647008
+1859,Where do you want to go?,No,Yes,0.8666266422588891
+1884,You are forwarding these messages to the wrong Dana Davis.,No,No,0.4076894757080495
+1885,You are scheduled to address the group as follows:,No,No,0.41595771985623453
+1903,You may also be receiving this email if you reset your password since your last purchase.,No,Yes,0.5417447527079737
+1929,"viadeoHello,On Sunday $NUM April $NUM, Tonyrull Tonyrull sent you an invitation to join their network.Viadeo will help you to:find your contacts and meet other professionalsbuild your online reputationfind a job or recruitThank you,The Viadeo Team.Accept Tonyrull's invitationMessage from Tonyrull TonyrullIf you no longer want to receive invitations to join Viadeo: Unsubscribe",No,No,0.46002080054895966
+1934,$NUM. Select the services that you want to add.,Yes,No,0.3541202784980981
+1944,"Bowen called, and unless he has to schedule a call with a judge from Texas at the same time, we're on for $NUM:$NUM AM.",Yes,Yes,0.5022505735693615
+1946,Call me at ($NUM) $NUM to discuss in further detail.,Yes,Yes,0.8869775720248576
+1951,Did Pam do some due diligence for you before sending this e:mail so that you know this date and time works for everyone?,Yes,Yes,0.6168988410800644
+1953,Do not in any event abandon any assets at any time.,Yes,Yes,0.594055805640668
+1960,"For additional help, don't hesitate to visit $LINK",Yes,Yes,0.5097162890676261
+1975,I need your Drivers License # & expirary date for compliance purposes since Sept. $NUM to make sure you are not a terrorist or $ launder.,Yes,No,0.3510271133668156
+1998,"If you want to cancel your account, go to: $LINK",Yes,No,0.4958081423104947
+2017,"Keep these names, and I'll keep you posted on who to schedule with him.",Yes,No,0.4977282532484128
+2018,"LaRence, Please note interview schedule below.",Yes,Yes,0.7725821040106456
+2032,Please be advised that the suspension date contained in H-$NUM can and probably will be changed before the orders are considered at the CPUC meeting on Sept. $NUM.,Yes,Yes,0.5764392292196586
+2034,"Please call me if you have any comments, as I want to send it out tonight.",Yes,Yes,0.7754470617966603
+2046,Please find below SCE's proposal to settle past Direct Access Credit issues and determine the Direct Access Credit going forward.,Yes,Yes,0.5442730418294157
+2051,"Please note that to ensure regulatory compliance and for the protection of our customers and business, we may monitor and read e-mails sent to and from our server(s).",Yes,No,0.3808935522995824
+2058,"Shop our collection of cozy slippers for the family starting at $$NUM and take $$NUM off any online purchase of $$NUM or more* with coupon code ZZWREATH through Sunday, December 8th, $NUM.",Yes,No,0.32296198999949344
+2061,"Should you have any questions or require additional information, please feel free to contact me via telephone at ($NUM)$NUM or via email $EMAIL.",Yes,No,0.4565374347024746
+2062,"Should you have any questions, feel free to contact me at ($NUM) $NUM.",Yes,No,0.31677966203348495
+2065,So I can get an update on that when we talk tomorrow.,Yes,Yes,0.670908189233583
+2075,"To continue using Handheld Contact for ACT! after your $NUM day trial, visit $LINK to subscribe.",Yes,No,0.41100867043118416
+2083,"Twitter $NUM version update.$NUM) Tumblr error modify.You can take funny pictures in the Magic Hour, please look separately with friends Share SNS in a variety of photos taken.All, it was MagicHour team to strive for an enjoyable life photo of you always.Thank you.",Yes,No,0.2674607676641899
+2088,Use your free listings and subtitles to reach Halloween shoppers now.,Yes,No,0.31231882687804785
+2097,You available to talk today?,Yes,Yes,0.7438666152715913
+2118,Did you get my message about my parking tag?,Yes,No,0.3482824618214806
+2130,"I did call and got credit on my bill, it doesnt just show up u need to make the call and they ask u how many days u were out I told them to fri and got $NUM credit",Yes,No,0.3479085369611127
+2149,"If you have any problem with the link, please copy the url below and paste it on your browser.",Yes,Yes,0.6639838485974324
+2163,Please send us an email if you have any problems during signup.,Yes,Yes,0.7200095919646328
+2174,What if you could borrow thousands and have up to $NUM years to repay?,Yes,No,0.39926885899178005
+2193,I would like to help you make your evaluation of the Software Update Wizard as successful as possible.,Yes,No,0.3132752025610372
+2202,"Rick, are you on this, or should I get on it?",Yes,Yes,0.5348337500323294
+2208,We would like to invite you back to continue.,Yes,Yes,0.5565362199577777
+2214,Will Enron cover the cost of having those returns prepared?,Yes,No,0.2241858724978687
+2219,"As it is impossible for Dr Lay to participate at the Preparatory Meeting, we would be most grateful if you could nominate a delegate as well as send us his preliminary ideas on interesting issues and panellists for the programme.",Yes,Yes,0.6050759975979227
+2223,"Don, go ahead and set it up - what have been discussing with them on the gas side?",Yes,No,0.476446758416293
+2225,"I am comfortable with your decisions, so feel free to go ahead with this.",Yes,Yes,0.5557356991826625
+2227,I just want to make sure we aren't missing any deals in our model.,Yes,No,0.3081430192879904
+2233,Lets discuss this before we make offer.,Yes,Yes,0.7505612640299123
+2235,"Molly, could you please forward the ""thanks, but no thanks"" template letter to me?",Yes,Yes,0.729596137154821
+2236,"Or, would it be helpful at this point to meet with anyone else at Enron, to at least make the personal connection?",Yes,Yes,0.6020880755927742
+2237,Saturday is good.,Yes,No,0.3056289457688437
+2240,"There are plenty of options, but which product will you get?",Yes,No,0.291149662314505
+2243,We wanted to let you know about some upcoming changes to Kicksend which may alter the way you use our app.,Yes,Yes,0.5854882781399708
+2245,Were you able to trace the package?,Yes,No,0.3227930720140109
+2250,"Would you recommend Roger DiRuggiero, MD? Click one of the links below to leave feedback.",Yes,Yes,0.5825765086623871
+2260,You win......but you still owe me lunch.,Yes,Yes,0.5561716254633796
+2266,Let's go out to lunch when you come back.,Yes,Yes,0.816187268105348
+2267,Please contact CrashPlan PROe Support.,Yes,Yes,0.8491990691651701
+2268,"Please, call-in or attend when the meeting is set.",Yes,Yes,0.8733048360710267
+2275,"Please copy and paste them as above, click Submit to register.",Yes,Yes,0.6527522838734215
+2277,Send me your number and I'll give you a call.,Yes,Yes,0.7916127213011239
+2293,"Alternatively, since I'll be on the call anyway, you can leave me a voicemail, or call me at $NUM, and I can relay those points that you feel are most important to communicate.",Yes,Yes,0.673427607937695
+2296,"And if you want to make sharing photos as easy as taking them, download one of our apps at $LINK",Yes,No,0.3693525705366844
+2307,Are you available to speak with me for a few minutes sometime this week?,Yes,Yes,0.7481476823641801
+2313,Bob - Please check with Vance on this deal.,Yes,Yes,0.7352761492447432
+2316,"But for today, I'd like you to keep an open mind.",Yes,No,0.46128234288447983
+2329,Can we meet to talk about it on Monday?,Yes,Yes,0.8545185203162421
+2339,Can you get the person that reports to Bob Hall to give me an update on our moves from $NUM so that I can get back with Jeff this week?,Yes,Yes,0.7591739472624552
+2352,Carlos - Please check with measurement to determine if this volume is correct.,Yes,Yes,0.6225668809798572
+2359,Could we schedule a conference call for Friday or Monday to discuss any questions/issues.,Yes,Yes,0.8874410176486631
+2386,Feel free to give me a call to discuss.,Yes,Yes,0.8709707875600863
+2387,"For a copy of the proposal, please e-mail Philip Marston, the Project Director, at $EMAIL.",Yes,Yes,0.5961339366926132
+2392,"For your issues to be properly addressed, please send your concerns to $EMAIL or visit $LINK to submit a ticket.",Yes,Yes,0.7428389147158929
+2410,Hey call me when you're on the net.,Yes,Yes,0.7965175793664272
+2417,Hope you can give us more advice!,Yes,No,0.44609716070158534
+2421,I am glad that your trip is postponed - then we will be able to get together.,Yes,No,0.42392117051192824
+2422,I believe we will want to assign the turbines to an Enron LLC the following week.,Yes,No,0.36440593001705834
+2426,I had wanted to discuss with you your thoughts on what the criteria should be on which we make that decision.,Yes,Yes,0.6400099083742432
+2427,I have included our phone numbers below in case you have any comments you would like to discuss with us.,Yes,Yes,0.6662276673206454
+2430,I hope we will get to meet in person soon.,Yes,Yes,0.5417088126206945
+2436,I shall be glad to join you.,Yes,Yes,0.8161137193323825
+2443,I wanted to see if we could set up a time to meet next week concerning my PRC review.,Yes,Yes,0.8050951603347449
+2445,I was wondering if we could schedule a conference call to discuss the form of these agreements.,Yes,Yes,0.8857715165263543
+2449,I will call you tomorrow and would like to throw out an idea regarding an on-going resource for operations in London.,Yes,Yes,0.5095386517847372
+2458,"I would like to ask you to help me with this matter and try to set my termination date after December $NUM, i.e. at the earliest next Monday.",Yes,Yes,0.5867937838170321
+2462,"I would like to get together with you, Mary Solmonson and James Scribner to begin work on the model for scoping high, low and expected cases around the commercialization opportunities for mid and back office services.",Yes,Yes,0.5003166667659893
+2485,"If the link above does not work, please move the message to your inbox.",Yes,No,0.48236462844750866
+2507,"If you no longer want to apply, go to: $LINK to retrieve and delete your application.",Yes,No,0.4308627789799795
+2508,"If you should need any further information, please contact me at $NUM or $NUM.",Yes,Yes,0.8551661879590846
+2510,"If you want me to take care of her, let me know.",Yes,Yes,0.7960476945465538
+2517,If you would like to meet to discuss this let me know and we'll set up a time.,Yes,Yes,0.9601642164108249
+2520,"If you'd like to discuss it further, I'd be happy to talk about it.",Yes,Yes,0.8837180728933679
+2521,"If you'd like to discuss, feel free to give me a call at $NUM.",Yes,Yes,0.835997611127573
+2524,"If you're not interested in receiving emails from me ever again, you may let me know here.",Yes,Yes,0.7421334604294676
+2537,"It would be nice if you could be at my dinner, since I probably won't know anyone else.",Yes,Yes,0.70277724805569
+2540,"Jim, lets get together in the next week or so to discuss progress.",Yes,Yes,0.8281957243015221
+2551,Let me know if HR can not produce that for you and I can get you a copy.,Yes,Yes,0.8869664515949207
+2552,Let me know if one afternoon this week works for you.,Yes,Yes,0.9138812735017493
+2561,"Let me know what you think...I may go do my long run on Sunday, if you're doing one too, maybe we can meet for breakfast...",Yes,Yes,0.9328410844521677
+2562,Let me know when you have the right memory available to install.,Yes,Yes,0.8181234088126595
+2569,Let us know what kinds of stats you'd like to see!,Yes,Yes,0.692973605446974
+2597,My high score right now is $NUM miles... let me know if you're able to beat it.,Yes,Yes,0.5582534054206779
+2601,"Now that we sent the first blow, lets get everyone together to discuss our future steps.",Yes,Yes,0.6951957680734383
+2619,Please be informed that you have a joining date on $NUM/$NUM in Equinox and you did not show up last $NUM/$NUM to join the ship.Can you please advise what is your valid reason.,Yes,Yes,0.8123489118853179
+2620,Please book it for $NUM nights--thurs/fri/sat.,Yes,No,0.49585353640140106
+2623,Please call him to discuss.,Yes,Yes,0.96133837898356
+2625,Please call me to discuss your question.,Yes,Yes,0.975327413918963
+2636,Please confirm your Twitter account,Yes,Yes,0.8292144348808789
+2643,Please consider the environment before printing this email.,Yes,Yes,0.6960405817741793
+2657,Please don't count December out as a possible start time for the special session.,Yes,Yes,0.6120309985136567
+2668,Please familiarize yourself with our Safety tips,Yes,Yes,0.693506578821056
+2676,Please find my resume and cover letter attached.,Yes,Yes,0.7135278969768203
+2678,Please find the attached OPML file.,Yes,Yes,0.8190028161485468
+2684,Please forward a job scope for Jen and Craig.,Yes,Yes,0.8618088693113739
+2687,Please forward this to the appropriate person.,Yes,Yes,0.7801006477139422
+2713,Please include the following email addresses on the bidweek pricing data distribution list.,Yes,Yes,0.6235809359563137
+2715,Please join us in wishing Alfonso all the best in his new life.,Yes,Yes,0.5646756157109749
+2726,"Please let me know if you would like further information, or if you would like to setup a meeting to review RedDot in action directly with your own Enron Corp website.",Yes,Yes,0.9206865529730921
+2729,Please let me know when our new socal and pg&e index descriptions are available.,Yes,Yes,0.9100676088605842
+2733,Please let us know what you think about Audiogalaxy Mixes and our new sharing features.,Yes,Yes,0.8854788111059759
+2746,Please print this page for your records,Yes,Yes,0.826844571346489
+2748,Please provide your name for the credit :,Yes,Yes,0.7466760910398956
+2754,Please refer to the email application number - 104J-FUNDS-4532A.,Yes,Yes,0.6406708974796458
+2760,Please retain a copy of this email for your records.,Yes,Yes,0.6980923288788325
+2769,Please send a copy of the plan to the OGC and work with Janette to schedule a meeting of the OGC to review the plan and get buy-in across the group.,Yes,Yes,0.6806776555285736
+2770,Please send a reply so that we will know if we are operational before we start sending the data out in bidweek.,Yes,Yes,0.7976497599110359
+2774,Please send me a copy of the memorialized points you created relative to Mr. Stubley's brief training session.,Yes,Yes,0.8221183448703556
+2776,Please send me the Meta ID.,Yes,Yes,0.927491114175025
+2783,Please send the sources of our ferc CA analysis to becky cantrell.,Yes,Yes,0.7148343209334266
+2794,Please take a moment to rate this email:,Yes,Yes,0.6810190496494267
+2798,Please take some time to read through everything and let us know what you think.,Yes,Yes,0.8457342238345357
+2799,Please take two minutes to fill out this quick survey: $LINK,Yes,Yes,0.7234145165630436
+2818,Please visit this blog entry for more details;,Yes,Yes,0.6976270840366073
+2823,"Please, let me know what would be convenient time to meet.",Yes,Yes,0.9844626528501934
+2824,Pls get me to Hou. on the Thur.,Yes,Yes,0.6353608563783552
+2843,"The appearance of your site might be slightly changed however, so please review it.",Yes,Yes,0.6566462645106328
+2849,"To let us know your decision about returning, please call us at $NUM, today between $NUM a.m. and $NUM p.m. ET—it only takes a few minutes if you act now!",Yes,Yes,0.7314886997843009
+2851,Toni: give me a call so we can discuss Josh.,Yes,Yes,0.9756318478037118
+2864,We can ask Ed on Wednesday.,Yes,Yes,0.7285981272792811
+2872,We can start discussions with the targets in a few days.,Yes,Yes,0.5540557503407396
+2874,We can try this week if you're available.,Yes,Yes,0.7701107092874189
+2876,We could discuss there.,Yes,Yes,0.9171584886127186
+2879,We have a rough roadmap of new features we would like to add but we need your help.,Yes,No,0.46442055351396005
+2889,We should discuss the continued use of Bill Ogden for non-compete litigation.,Yes,Yes,0.5628660233712885
+2894,We will have to meet up somewhere.,Yes,Yes,0.6280086293208658
+2900,"We would like, however, to move the meeting to $NUM p.m. Tuesday.",Yes,No,0.49868720169135766
+2901,We would really appreciate it if you would just take a moment to let us know about the quality of your experience.,Yes,Yes,0.6731681421900912
+2903,We'll have to allow extra time next Monday for a double de-brief.,Yes,No,0.4647813633208666
+2904,"We'll lay out all the options and let you decide, with no judgement on our part.",Yes,No,0.4898017177932866
+2906,We'll save the Scott Mills discussion for a later date!,Yes,No,0.4111990806142155
+2907,We're going - want to join us?,Yes,Yes,0.7785690218547737
+2919,When we get together I would like to sit down and go through a number of organizational re-alignments and what we may want to do on the regulatory front to support those businesses.,Yes,Yes,0.6083228557708197
+2933,"Would you like me to fax to you, or bring copies to tomorrow's meeting?",Yes,Yes,0.7305906207168911
+2937,Would you please write a description on how Consumers Energy works on the billing for title transfers?,Yes,Yes,0.8629085907752816
+2941,You just need to complete your full profile so we can provide the best rates and terms for it.,Yes,Yes,0.6903556517226777
+2942,You must complete an application and meet specific eligibility requirements in order to receive financial assistance from the government.,Yes,No,0.43086339132147244
+2947,You should however consider the Section $NUM plans that I believe we have discussed previously.,Yes,No,0.28035008830892544
+2957,And do you folks have a copy of the Peace letter (treatise) sent to FERC last week?,Yes,Yes,0.5223024767146338
+2959,"Any chance of finalizing the California tariff Monday morning (have a call, say, $NUM:$NUM/$NUM:$NUM AM PDT)?",Yes,No,0.4836849519823389
+2964,"As well, I would suggest we start discussions with Reeding & Bates which according to both Redmond and Thompson is a live deal.",Yes,No,0.4249649871674979
+2966,Cheryl and John would like to extend an invitation to you and your wife to be their guests at the worthy event.,Yes,No,0.4745562637719607
+2968,Contact Joe and suggest that he meet with you while you are there or I could do it for you.,Yes,Yes,0.6710223282519299
+2976,"Hey, we need to talk about something else--I'm getting a pheasant hunting trip organized for late Oct. Interested?",Yes,Yes,0.6606605689227437
+2991,I shall be driving back from Waco and barring any emergency I shall join you.,Yes,Yes,0.7140292056394673
+2995,I shall give you a call within the next few days to update you on our work and developments at Enron.,Yes,Yes,0.6044851558300408
+3009,I'll fill you in tomorrow on why it's so high level (and repetitive).,Yes,No,0.4607441936482327
+3015,I'm available at about $NUM:$NUM AM my time if you'd like to try to talk then.,Yes,Yes,0.59460201647619
+3021,I've available to you or your colleagues at any time.,Yes,No,0.4934627404038783
+3025,"If you don't know your Customer Number or PIN, go to capitalone360.com, select 'Sign In' and use the online tool to look up your Customer Number or Reset your PIN.",Yes,Yes,0.566115880433202
+3032,Let's definitely try to coordinate for the next meeting.,Yes,Yes,0.691854346895681
+3040,Perhaps coffee or lunch?,Yes,Yes,0.5287390661362961
+3045,"Shelly, we can do that but check with Cindy when she returns next week.",Yes,Yes,0.6506662483041052
+3058,We should be able to respond before the end of the week.,Yes,No,0.3528517460014778
+3063,"Wednesday, Dec. 13th would work best for me.",Yes,Yes,0.5748015280726932
+3073,If you think there’s things to improve leave us $NUM or $NUM stars and tell us what or if you think the app is rubbish leave us $NUM or $NUM stars and let us know why.,Yes,Yes,0.6099642674736211
+3075,"If you'd like to manage your Google Account Activity Reports, go to:",Yes,Yes,0.5295178073437757
+3077,Did our HR guys get the apartment lined up for me yet?,Yes,Yes,0.5577805420989392
+3080,"To cancel or update your posting, please log-in to your Cardinal Careers account and click the JOBS link from the menu on top of your home page and select the job you would like to edit by clicking on the job title.",Yes,Yes,0.5030712750878822
+3089,Send me your e-mail address at home.,Yes,Yes,0.5446185500437644
+3101,@ReadingRecs and another book please $NUM:$NUM AM - $NUM Apr $NUM,Yes,Yes,0.6138976976684432
+3103,"ReadingRecs @ReadingRecs @jasonbdaly For book recommendations, just ask me.",Yes,Yes,0.5698361707400414
+3110,"Because my schedule is a mess (thanks to the mess California has created), if you don't reach me on my office line, please try $NUM.",Yes,No,0.4608512858386011
+3115,"If you get a chance, shoot me a message with his info.",Yes,Yes,0.549572576354965
+3117,Otherwise let me know and we'll refine this process to get you what you need.,Yes,Yes,0.8920202642535707
+3119,Please call me when you get a chance.,Yes,Yes,0.9471676835273074
+3131,"Also, give Lance a call and get on his schedule.",Yes,Yes,0.7630060431200021
+3134,"Also, please include information on any choices or extras available.",Yes,Yes,0.8044259486303363
+3140,"Although the progress bar may appear to be stuck, please ignore, Tempo is still making your calendar smart.",Yes,Yes,0.5158995062837958
+3141,And schedule some time for me to meet with him on Thursday as well.,Yes,Yes,0.7616018814359004
+3149,Apply today and see how much we can save you!,Yes,Yes,0.6129688632767759
+3160,"Because we respect your online time and Internet privacy, please be assured we will never share your e-mail address with third parties.",Yes,Yes,0.6550309215613154
+3162,"Before using lino, please visit $LINK",Yes,Yes,0.8338027932596609
+3172,Call me on Monday to discuss the Enron Online download.,Yes,Yes,0.8728498220289111
+3174,Call me to discuss.,Yes,Yes,0.9570301137653193
+3176,Can you change my address in your system (and with fund companies) to my mom and dad's address.,Yes,No,0.4212107339549643
+3177,Can you check in with Tamara and find out what her issues are?,Yes,Yes,0.7799981909041455
+3179,Can you check with your people ?,Yes,Yes,0.7892524838361494
+3185,Can you give me what I want?... $LINK,Yes,Yes,0.920221101054461
+3193,Can you please work on this with Peter?,Yes,Yes,0.9193846682886752
+3202,"Celeste, try and get him scheduled into the Super Saturday if possible so that the risk guys can take a look at him.",Yes,Yes,0.597287335782021
+3206,"Chris, I would get Mark or Louise involved at this point - if it is mission critical let me know.",Yes,Yes,0.6824316529328137
+3207,"Chris, as per our discussion, I just want to confirm that we have the ability to break the contract with the EPC provider at any time.",Yes,No,0.4710739606948462
+3213,Could you also forward to the SF office.,Yes,Yes,0.6746446307429868
+3223,Could you please print out a copy and forward it along to Ken Lay prior to his departure for Washington D.C.? Thanks very much.,Yes,Yes,0.7674852244337855
+3224,Could you please put me in contact with your team handling the communications for the transition or meet with me personally to discuss?,Yes,Yes,0.9664472976713057
+3232,Could you teach my brother how to use his e-mail?,Yes,Yes,0.6179214888347772
+3235,"Dave, why don't you send it to Steve for review.",Yes,Yes,0.5881295265855017
+3240,Do we need to add the PX letter to the agenda for tomorrow's $NUM AM call?,Yes,Yes,0.6497538501978752
+3243,"Don't forget tonight is the season premier of ""Frasier"".",Yes,No,0.4041201021105437
+3249,"First, please use your PC/Mac to download and operate the program for backup and restoration from $LINK",Yes,Yes,0.6854957944705979
+3250,For Full Details please read the attached .html,Yes,Yes,0.736052793443387
+3254,"For more information about Simplenote Premium, please see:",Yes,Yes,0.7438533710526517
+3256,For the perfume lover on your Christmas list: try this ... $LINK,Yes,No,0.48361072183846726
+3259,"Gary, We need to have two more books created as soon as possible.",Yes,No,0.4730957883837918
+3260,Give it a try and tell us what you think.,Yes,Yes,0.6976800625091126
+3262,"Go ahead and send it out to Frevert, McMahon, Bowen and Haedicke.",Yes,Yes,0.5366557323276654
+3280,"Hi, please save this important email.",Yes,Yes,0.6840381787973313
+3282,How about $NUM am on Monday to discuss the NEXT deal?,Yes,Yes,0.8020722603275139
+3287,I am open for luch Wednesday and Thursday.,Yes,Yes,0.5574488003151469
+3292,I assume that you will go through these documents for benefits/plan issues and then send relevant ones to Pat this week.,Yes,Yes,0.5552850088176877
+3297,I expect an answer by early next week -- I hope Monday.,Yes,No,0.445934175007736
+3300,"I have cleared my calendar, so any time in the morning works for me.",Yes,Yes,0.5666325534132622
+3308,I need to know if you want to download this or if I should pass it on to another member...,Yes,Yes,0.6402840341363759
+3314,I think that it would be useful for Ken to join the call.,Yes,Yes,0.7912832743357638
+3317,I think we need to get back to Jeff not next week but the following week with a strawman.,Yes,Yes,0.6697409127166892
+3321,I will get back in touch if the Tuesday lunch does open up.,Yes,No,0.48998290268211
+3323,"I would also suggest attending the task force meeting, providing EES management is agreeable, to get a better picture of what is going on.",Yes,Yes,0.5063645113696008
+3327,I would like to get access to Mimic.,Yes,No,0.4650607778208447
+3337,"I'm focused on the letter, so it would be very helpful if you could draft some brief message points and email to me and Karen.",Yes,Yes,0.7119432821406774
+3351,"If the above URL does not work, please use your Web browser to go to:",Yes,Yes,0.7465091625651226
+3370,"If you want to learn how to turn social data into a strategic advantage, join some of the brightest minds in social by registering today for Social Data Week $NUM.",Yes,No,0.4990242874979567
+3373,"If you would like to add a prediction or two, please send an e-mail with your name and contact information to Hope Duncan at $EMAIL",Yes,Yes,0.6653824879423005
+3374,"If you would like to prevent this, just log into historious or historify something in the next month.",Yes,No,0.43046003690262796
+3380,"If you're overweight, try to keep it to $NUM pounds.",Yes,No,0.4358792098207899
+3384,"In case of installation problems, please contact the vendor for help!",Yes,Yes,0.5571264007829446
+3405,"Joe is expecting your call, Jim, and David you might want to follow up and invite him to lunch.",Yes,Yes,0.585559995613797
+3406,Join me at $LINK,Yes,Yes,0.7340454716778768
+3410,Join the webinar now.,Yes,Yes,0.5162384757249072
+3429,Let me know when you have a few minutes ( any time after 2pm).,Yes,Yes,0.8732527372904577
+3438,Lets discuss further before we approach ENA.,Yes,Yes,0.7749169258427224
+3451,Note: please use a good password and keep it in a safe place,Yes,Yes,0.6762024015660387
+3453,"On Garden State matters, how do you want to handle the signing of documents?",Yes,Yes,0.5213775129184428
+3458,Or are we just going to call them from the conference room?,Yes,No,0.4395422252819142
+3468,Place your order by Dec. 17th to ensure your AT&T devices arrive on time.,Yes,No,0.45370711635765204
+3476,Please let him know I'm worried and I love you both.,Yes,Yes,0.7702020575866984
+3493,"Remember, you need to keep track of all of this on your $NUM accomplishments for your year end review.",Yes,No,0.48492453010385916
+3505,"Set a reminder for Thursday, November $NUM, $NUM:$NUM AM CST!",Yes,Yes,0.5227437179006282
+3508,"She's up for golf, so expect us Saturday night.",Yes,No,0.38615652187258404
+3512,Simply select the type of device you would like to make a prototype for then view it on that device at full-width or within a device frame on any computer.,Yes,No,0.47412907138546634
+3520,"Starting tonight, will you add NGW to the monthly bidweek email and index postings.",Yes,No,0.48978883005773616
+3539,"To complete the sign-up process, please follow this link:",Yes,Yes,0.636245394085104
+3546,"To learn how Apple collects, uses, and safeguards the personal information you provide, please review the Apple Customer Privacy Policy .",Yes,Yes,0.7394968341800241
+3550,"To no longer receive messages, please update your preferences below.",Yes,No,0.3450926518448364
+3555,"To register for this event, please reply to this email including your Name, Title, Company, Address, and Telephone Number in the body of your message.",Yes,Yes,0.5259852437138829
+3561,"To use this service, please register your card and mobile number online at GreenDot.com.",Yes,Yes,0.6872716074796786
+3573,Use LED when you want to reduce your carbon footprint.,Yes,Yes,0.6472476569568604
+3579,Wayne can you set up a meeting for the four of us over the next few weeks.,Yes,Yes,0.6838036308810581
+3587,We have dinner reservations for Saturday at $NUM:$NUM.,Yes,Yes,0.5238387299731982
+3597,"Wes, I assume that you will be putting together a final $NUM i/s package for me in the next couple of days.",Yes,No,0.49338436818492987
+3598,"Wes, I believe that we don't have any issues recognizing the value from this transaction - please confirm.",Yes,Yes,0.5603794823316874
+3599,"Wes, please have the detailed HPL numbers available to discuss on Monday.",Yes,Yes,0.8660243619538709
+3605,While it is fresh on my mind -- it would be great if you could capture the following information before our meeting:,Yes,Yes,0.6687489877336282
+3610,Will you guys forward this message to Danise for me.,Yes,Yes,0.6067650745553443
+3611,Will you please get me access to manage the SJ physical product?,Yes,Yes,0.7844562335930737
+3613,Will you take a moment to answer a few questions?,Yes,No,0.4391172388506716
+3615,"With all that has transpired in the last several weeks, I know that you must be incredibly busy; but if you can work it in, John Kelley and I would like to meet with you for about $NUM minutes to give you an update on two initiatives, listed below, aimed at getting the $NUM Olympics to Houston.",Yes,Yes,0.5395957388862286
+3619,"Would definitely like to gather (phone call or something) prior to the meeting so we (me, you, Rick, Richard) are clear on what our goals are for the meeting and what the agenda needs to look like.",Yes,Yes,0.7488512635574809
+3625,Wus up!! Just wondering if you give me directions from BWI to our accomidations on the base??,Yes,Yes,0.7282601002405441
+3627,"Yes, we'll be there on Sunday.",Yes,Yes,0.5729603511167851
+3645,You will still need to coordinate with the contract group in getting the correct contract in place for the deal.,Yes,No,0.4161126186858823

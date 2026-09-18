@@ -1,0 +1,167 @@
+{
+  "model": "lstm",
+  "config": {
+    "model_name": "lstm",
+    "seed": 42,
+    "splits_dir": "/kaggle/working/mailsense/data/splits",
+    "results_dir": "/kaggle/working/mailsense/results",
+    "models_dir": "/kaggle/working/mailsense/models",
+    "embedding_path": "embeddings/word2vec.bin",
+    "embedding_binary": true,
+    "embedding_trainable": true,
+    "max_len": 64,
+    "min_freq": 2,
+    "max_vocab": 20000,
+    "hidden_dim": 128,
+    "num_layers": 1,
+    "bidirectional": true,
+    "dropout": 0.3,
+    "batch_size": 32,
+    "epochs": 20,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "grad_clip": 5.0,
+    "patience": 4,
+    "device": "auto",
+    "vocab_size": 2450,
+    "embedding_dim": 300,
+    "embedding_coverage": 0.9550653594771242,
+    "n_parameters": 1175834,
+    "best_epoch": 3,
+    "best_val_f1": 0.8174904942965779
+  },
+  "metrics": {
+    "val": {
+      "accuracy": 0.8248175182481752,
+      "precision": 0.8022388059701493,
+      "recall": 0.8333333333333334,
+      "f1": 0.8174904942965779,
+      "macro_f1": 0.8245347208324996,
+      "weighted_f1": 0.8249460625280278,
+      "true_positives": 215,
+      "true_negatives": 237,
+      "false_positives": 53,
+      "false_negatives": 43,
+      "confusion_matrix": [
+        [
+          237,
+          53
+        ],
+        [
+          43,
+          215
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "rows": "true",
+        "cols": "predicted",
+        "order": [
+          "No (0)",
+          "Yes (1)"
+        ]
+      },
+      "support": {
+        "n": 548,
+        "actual_yes": 258,
+        "actual_no": 290
+      },
+      "roc_auc": 0.8995856722801391,
+      "classification_report": "                     precision    recall  f1-score   support\n\nNon-Actionable (No)       0.85      0.82      0.83       290\n   Actionable (Yes)       0.80      0.83      0.82       258\n\n           accuracy                           0.82       548\n          macro avg       0.82      0.83      0.82       548\n       weighted avg       0.83      0.82      0.82       548\n"
+    },
+    "test": {
+      "accuracy": 0.7481751824817519,
+      "precision": 0.717391304347826,
+      "recall": 0.7674418604651163,
+      "f1": 0.7415730337078652,
+      "macro_f1": 0.7480107161421888,
+      "weighted_f1": 0.7483866392040471,
+      "true_positives": 198,
+      "true_negatives": 212,
+      "false_positives": 78,
+      "false_negatives": 60,
+      "confusion_matrix": [
+        [
+          212,
+          78
+        ],
+        [
+          60,
+          198
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "rows": "true",
+        "cols": "predicted",
+        "order": [
+          "No (0)",
+          "Yes (1)"
+        ]
+      },
+      "support": {
+        "n": 548,
+        "actual_yes": 258,
+        "actual_no": 290
+      },
+      "roc_auc": 0.8653969526864476,
+      "classification_report": "                     precision    recall  f1-score   support\n\nNon-Actionable (No)       0.78      0.73      0.75       290\n   Actionable (Yes)       0.72      0.77      0.74       258\n\n           accuracy                           0.75       548\n          macro avg       0.75      0.75      0.75       548\n       weighted avg       0.75      0.75      0.75       548\n"
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5617641562351742,
+      "val_loss": 0.4428371639147292,
+      "val_accuracy": 0.8120437956204379,
+      "val_f1": 0.7840670859538784,
+      "seconds": 1.9
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.376072959709774,
+      "val_loss": 0.4506789663412275,
+      "val_accuracy": 0.8175182481751825,
+      "val_f1": 0.7925311203319502,
+      "seconds": 0.9
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.27829526542100885,
+      "val_loss": 0.40729605498975213,
+      "val_accuracy": 0.8248175182481752,
+      "val_f1": 0.8174904942965779,
+      "seconds": 0.8
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.19808580882978533,
+      "val_loss": 0.4670065617474326,
+      "val_accuracy": 0.8248175182481752,
+      "val_f1": 0.8040816326530612,
+      "seconds": 0.8
+    },
+    {
+      "epoch": 5,
+      "train_loss": 0.14548320240412208,
+      "val_loss": 0.5336145596021283,
+      "val_accuracy": 0.8138686131386861,
+      "val_f1": 0.8015564202334631,
+      "seconds": 0.8
+    },
+    {
+      "epoch": 6,
+      "train_loss": 0.10233006018948415,
+      "val_loss": 0.5661959726988834,
+      "val_accuracy": 0.8083941605839416,
+      "val_f1": 0.8015122873345936,
+      "seconds": 0.9
+    },
+    {
+      "epoch": 7,
+      "train_loss": 0.07817718639182485,
+      "val_loss": 0.6503700925594699,
+      "val_accuracy": 0.8248175182481752,
+      "val_f1": 0.8146718146718147,
+      "seconds": 0.8
+    }
+  ]
+}

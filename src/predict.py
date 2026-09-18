@@ -233,11 +233,9 @@ def main() -> None:
             else 1 - probability
         )
 
-        print(
-            f"[{verdict:>14}]  "
-            f"confidence={confidence:.3f}  "
-            f"{original}"
-        )
+        print(f"Email: {original}")
+        print(f"Prediction: {verdict}")
+        print(f"Confidence: {confidence:.1%}")
 
 
 if __name__ == "__main__":

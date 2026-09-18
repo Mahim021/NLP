@@ -1,0 +1,31 @@
+{
+  "dataset_file": "/kaggle/working/mailsense/data/Ask0729-fixed.txt",
+  "raw_rows": 3657,
+  "malformed_or_invalid_rows": 0,
+  "raw_class_distribution": {
+    "No": 1938,
+    "Yes": 1719
+  },
+  "seed": 42,
+  "final_rows": 3651,
+  "final_class_distribution": {
+    "No": 1933,
+    "Yes": 1718
+  },
+  "train_size": 2555,
+  "train_class_distribution": {
+    "No": 1353,
+    "Yes": 1202
+  },
+  "val_size": 548,
+  "val_class_distribution": {
+    "No": 290,
+    "Yes": 258
+  },
+  "test_size": 548,
+  "test_class_distribution": {
+    "No": 290,
+    "Yes": 258
+  },
+  "removed_total": 6
+}
