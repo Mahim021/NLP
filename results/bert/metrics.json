@@ -1,0 +1,135 @@
+{
+  "model": "bert",
+  "config": {
+    "model_name": "bert",
+    "pretrained_model": "bert-base-uncased",
+    "seed": 42,
+    "splits_dir": "D:\\Projects\\NLP Project\\data\\splits",
+    "results_dir": "D:\\Projects\\NLP Project\\results",
+    "models_dir": "D:\\Projects\\NLP Project\\models",
+    "max_len": 64,
+    "batch_size": 16,
+    "gradient_accumulation_steps": 1,
+    "epochs": 4,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.01,
+    "warmup_ratio": 0.1,
+    "grad_clip": 1.0,
+    "patience": 2,
+    "freeze_encoder": false,
+    "device": "auto",
+    "n_trainable_parameters": 109483778,
+    "best_epoch": 4,
+    "best_val_f1": 0.8539325842696629
+  },
+  "metrics": {
+    "val": {
+      "accuracy": 0.8576642335766423,
+      "precision": 0.8260869565217391,
+      "recall": 0.8837209302325582,
+      "f1": 0.8539325842696629,
+      "macro_f1": 0.8575712743412371,
+      "weighted_f1": 0.8577837525935919,
+      "true_positives": 228,
+      "true_negatives": 242,
+      "false_positives": 48,
+      "false_negatives": 30,
+      "confusion_matrix": [
+        [
+          242,
+          48
+        ],
+        [
+          30,
+          228
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "rows": "true",
+        "cols": "predicted",
+        "order": [
+          "No (0)",
+          "Yes (1)"
+        ]
+      },
+      "support": {
+        "n": 548,
+        "actual_yes": 258,
+        "actual_no": 290
+      },
+      "roc_auc": 0.928588612670409,
+      "classification_report": "                     precision    recall  f1-score   support\n\nNon-Actionable (No)       0.89      0.83      0.86       290\n   Actionable (Yes)       0.83      0.88      0.85       258\n\n           accuracy                           0.86       548\n          macro avg       0.86      0.86      0.86       548\n       weighted avg       0.86      0.86      0.86       548\n"
+    },
+    "test": {
+      "accuracy": 0.8521897810218978,
+      "precision": 0.8265682656826568,
+      "recall": 0.8682170542635659,
+      "f1": 0.8468809073724007,
+      "macro_f1": 0.8520118822576289,
+      "weighted_f1": 0.8523115012290291,
+      "true_positives": 224,
+      "true_negatives": 243,
+      "false_positives": 47,
+      "false_negatives": 34,
+      "confusion_matrix": [
+        [
+          243,
+          47
+        ],
+        [
+          34,
+          224
+        ]
+      ],
+      "confusion_matrix_labels": {
+        "rows": "true",
+        "cols": "predicted",
+        "order": [
+          "No (0)",
+          "Yes (1)"
+        ]
+      },
+      "support": {
+        "n": 548,
+        "actual_yes": 258,
+        "actual_no": 290
+      },
+      "roc_auc": 0.9342956428762363,
+      "classification_report": "                     precision    recall  f1-score   support\n\nNon-Actionable (No)       0.88      0.84      0.86       290\n   Actionable (Yes)       0.83      0.87      0.85       258\n\n           accuracy                           0.85       548\n          macro avg       0.85      0.85      0.85       548\n       weighted avg       0.85      0.85      0.85       548\n"
+    }
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5414795375541639,
+      "val_loss": 0.41120298021901264,
+      "val_accuracy": 0.8175182481751825,
+      "val_f1": 0.8091603053435115,
+      "seconds": 673.9
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.32465091816815816,
+      "val_loss": 0.3640428807613623,
+      "val_accuracy": 0.8503649635036497,
+      "val_f1": 0.8379446640316206,
+      "seconds": 1089.8
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.19812996119718254,
+      "val_loss": 0.47087708267852335,
+      "val_accuracy": 0.8558394160583942,
+      "val_f1": 0.8528864059590316,
+      "seconds": 999.3
+    },
+    {
+      "epoch": 4,
+      "train_loss": 0.11708957777388822,
+      "val_loss": 0.525878548166667,
+      "val_accuracy": 0.8576642335766423,
+      "val_f1": 0.8539325842696629,
+      "seconds": 537.3
+    }
+  ]
+}

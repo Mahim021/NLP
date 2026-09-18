@@ -1,0 +1,67 @@
+{
+  "dataset_file": "D:\\Projects\\NLP Project\\data\\Ask0729-fixed.txt",
+  "raw_rows_parsed": 3657,
+  "malformed_rows": 0,
+  "raw_class_distribution": {
+    "No": 1938,
+    "Yes": 1719
+  },
+  "missing_values": 0,
+  "seed": 42,
+  "removed_empty_or_meaningless": 0,
+  "removed_conflicting_duplicates": 0,
+  "conflicting_duplicate_texts": 0,
+  "removed_exact_duplicates": 4,
+  "final_rows": 3653,
+  "final_class_distribution": {
+    "No": 1935,
+    "Yes": 1718
+  },
+  "text_length_words": {
+    "count": 3653.0,
+    "mean": 16.56501505611826,
+    "std": 10.67451090994483,
+    "min": 2.0,
+    "25%": 10.0,
+    "50%": 14.0,
+    "75%": 21.0,
+    "max": 222.0
+  },
+  "text_length_chars": {
+    "count": 3653.0,
+    "mean": 89.95373665480427,
+    "std": 61.92545155463122,
+    "min": 9.0,
+    "25%": 50.0,
+    "50%": 77.0,
+    "75%": 112.0,
+    "max": 1294.0
+  },
+  "word_length_percentiles": {
+    "p50": 14.0,
+    "p75": 21.0,
+    "p90": 29.0,
+    "p95": 35.0,
+    "p99": 51.0
+  },
+  "train_size": 2557,
+  "train_class_distribution": {
+    "No": 1355,
+    "Yes": 1202
+  },
+  "val_size": 548,
+  "val_class_distribution": {
+    "No": 290,
+    "Yes": 258
+  },
+  "test_size": 548,
+  "test_class_distribution": {
+    "No": 290,
+    "Yes": 258
+  },
+  "removed_total": 4,
+  "split_sizes": {
+    "test_size": 0.15,
+    "val_size": 0.15
+  }
+}
