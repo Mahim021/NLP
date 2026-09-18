@@ -1,2 +1,0 @@
-model,accuracy,precision,recall,f1,macro_f1,weighted_f1,true_positives,true_negatives,false_positives,false_negatives,roc_auc
-tfidf_logreg,0.8029197080291971,0.7798507462686567,0.810077519379845,0.7946768060836502,0.802601560936562,0.8030643203440312,209,231,59,49,0.8890537289494789

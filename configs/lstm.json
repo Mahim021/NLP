@@ -1,19 +1,26 @@
 {
   "model_name": "lstm",
   "seed": 42,
+
   "max_len": 64,
   "min_freq": 2,
   "max_vocab": 20000,
-  "embed_dim": 128,
+
+  "embedding_path": "embeddings/word2vec.bin",
+  "embedding_binary": true,
+  "embedding_trainable": true,
+
   "hidden_dim": 128,
   "num_layers": 1,
   "bidirectional": true,
   "dropout": 0.3,
+
   "batch_size": 32,
   "epochs": 20,
   "learning_rate": 0.001,
   "weight_decay": 0.0,
   "grad_clip": 5.0,
   "patience": 4,
+
   "device": "auto"
 }

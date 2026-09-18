@@ -9,11 +9,5 @@
   "max_features": null,
   "C": 1.0,
   "class_weight": "balanced",
-  "max_iter": 2000,
-  "tune": true,
-  "param_grid": {
-    "tfidf__ngram_range": [[1, 1], [1, 2]],
-    "tfidf__min_df": [1, 2],
-    "clf__C": [0.25, 1.0, 4.0, 16.0]
-  }
+  "max_iter": 2000
 }

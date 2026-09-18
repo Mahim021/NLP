@@ -1,12 +1,13 @@
-# Core (Model A: TF-IDF + Logistic Regression, data prep, evaluation)
+# Core: data preparation, Model A, and evaluation
 numpy>=1.26
 pandas>=2.0
 scikit-learn>=1.4
 matplotlib>=3.8
 joblib>=1.3
 
-# Model B: LSTM  (CPU wheels: pip install torch --index-url https://download.pytorch.org/whl/cpu)
+# Model B: LSTM + pretrained Word2Vec
 torch>=2.2
+gensim>=4.3
 
 # Model C: BERT
 transformers>=4.40
