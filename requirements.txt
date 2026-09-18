@@ -1,7 +1,7 @@
 # Core: data preparation, Model A, and evaluation
 numpy>=1.26
 pandas>=2.0
-scikit-learn>=1.4
+scikit-learn==1.6.1  # must match version used to pickle models/
 matplotlib>=3.8
 joblib>=1.3
 
